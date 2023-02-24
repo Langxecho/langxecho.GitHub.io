@@ -90,7 +90,7 @@
   <script>
     try {
       var typed = new Typed("#subtitle", {
-        strings: ['成为你想所想的那样', '输了可不好玩,所以我从来都不会输', '快乐每一天'],
+        strings: ['成为你想所想的那样', '输了可不好玩,所以我从来都不会输', '一切的乐趣都在于与现实相接触啊'],
         startDelay: 0,
         typeSpeed: 200,
         loop: true,
@@ -460,81 +460,6 @@
 
     
     <article
-  id="post-进制的转换"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/02/05/%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/"
-    >进制的转换</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/02/05/%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/" class="article-date">
-  <time datetime="2023-02-05T03:47:16.000Z" itemprop="datePublished">2023-02-05</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%BF%85%E4%BF%AE%E8%AF%BE/">必修课</a> / <a class="article-category-link" href="/categories/%E5%BF%85%E4%BF%AE%E8%AF%BE/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AF%BC%E8%AE%BA/">计算机导论</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h2 id="进制的转换"><a href="#进制的转换" class="headerlink" title="进制的转换"></a>进制的转换</h2><h3 id="各种进制转10"><a href="#各种进制转10" class="headerlink" title="各种进制转10"></a>各种进制转10</h3><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303051.png" alt="image-20221009191357718"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303052.png" alt="image-20221009191440495"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303053.png" alt="image-20221009191521203"></p>
-<h3 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h3><p>个位上是0,然后向左递增或向右递减</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303054.png" alt="image-20221009191944636"></p>
-<p><strong>以个位为0,为中心轴,向左侧递增,向右侧递减</strong></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303056.png" alt="image-20221009192318681"></p>
-<p>其他进制的转10进制以此类推</p>
-<h2 id="10进制转换为其他进制"><a href="#10进制转换为其他进制" class="headerlink" title="10进制转换为其他进制"></a>10进制转换为其他进制</h2><p><strong>整数部分为除,小数部分为乘,读取方向为数轴方向,整数↑,小数↓</strong></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303057.png" alt="image-20221009192502724"></p>
-<p>从下往上读取.</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303058.png" alt="image-20221009192639409"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303059.png" alt="image-20221009193112096"></p>
-<p>只要记住是反过来的就行</p>
-<h3 id="快速方法-高进制转2"><a href="#快速方法-高进制转2" class="headerlink" title="快速方法(高进制转2)"></a>快速方法(高进制转2)</h3><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303060.png" alt="image-20221009193250110"></p>
-<p>一变几就看是2的几次方,并且如果是首位或者末尾是0的话就省略掉</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303062.png" alt="image-20221009193536174"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303063.png" alt="image-20221009193709308"></p>
-<h3 id="二进制转高的话就从小数点位置开始划分"><a href="#二进制转高的话就从小数点位置开始划分" class="headerlink" title="二进制转高的话就从小数点位置开始划分"></a>二进制转高的话就从小数点位置开始划分</h3><p>每一个被划分出来的单元都是独立的</p>
-<p>如果是16转8的话就用2来做媒介,很快</p>
-<h4 id="并且将划分出来的数组用二进制转换法转换成数字"><a href="#并且将划分出来的数组用二进制转换法转换成数字" class="headerlink" title="并且将划分出来的数组用二进制转换法转换成数字"></a>并且将划分出来的数组用二进制转换法转换成数字</h4><p> H下标表示16进制</p>
-<p>B是二进制 O是八进制</p>
-<p>D是10进制</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AF%BC%E8%AE%BA/" rel="tag">-计算机导论</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
-    <article
   id="post-储存计量单位与数字存储方式"
   class="article article-type-post"
   itemscope
@@ -576,6 +501,75 @@
 <p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051914428.png" alt="image-20221011150506260"><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051914429.png" alt="image-20221011150513085"></p>
 <h3 id="乘法与除法和日常计算逻辑一样"><a href="#乘法与除法和日常计算逻辑一样" class="headerlink" title="乘法与除法和日常计算逻辑一样"></a>乘法与除法和日常计算逻辑一样</h3><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051927681.png" alt="image-20230205192730603"></p>
 <p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051928775.png" alt="image-20230205192851689"></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AF%BC%E8%AE%BA/" rel="tag">-计算机导论</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-图灵机与冯诺依曼结构"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2023/02/05/%E5%9B%BE%E7%81%B5%E6%9C%BA%E4%B8%8E%E5%86%AF%E8%AF%BA%E4%BE%9D%E6%9B%BC%E7%BB%93%E6%9E%84/"
+    >图灵机与冯诺依曼结构</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2023/02/05/%E5%9B%BE%E7%81%B5%E6%9C%BA%E4%B8%8E%E5%86%AF%E8%AF%BA%E4%BE%9D%E6%9B%BC%E7%BB%93%E6%9E%84/" class="article-date">
+  <time datetime="2023-02-05T03:47:16.000Z" itemprop="datePublished">2023-02-05</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%BF%85%E4%BF%AE%E8%AF%BE/">必修课</a> / <a class="article-category-link" href="/categories/%E5%BF%85%E4%BF%AE%E8%AF%BE/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AF%BC%E8%AE%BA/">计算机导论</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="图灵机模型"><a href="#图灵机模型" class="headerlink" title="图灵机模型"></a>图灵机模型</h2><p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025134944918.png" alt="image-20221025134944918"></p>
+<p>改为数字是指指针把当前纸袋数字改写</p>
+<p>本图的程序将连续的1之后的0修改为1</p>
+<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025140315220.png" alt="image-20221025140315220"></p>
+<p>这是表示图</p>
+<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025140544377.png" alt="image-20221025140544377"></p>
+<p>这是作业</p>
+<p>b是空格,H是停止</p>
+<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025140742764.png" alt="image-20221025140742764"></p>
+<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025142851890.png" alt="image-20221025142851890"></p>
+<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025143202427.png" alt="image-20221025143202427"></p>
+<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025143514451.png" alt="image-20221025143514451"></p>
+<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025155841187.png" alt="image-20221025155841187"></p>
+<p>这个图就是哪边底下有东西哪边就是1</p>
+<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025145844113.png" alt="image-20221025145844113"></p>
+<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025145850682.png" alt="image-20221025145850682"></p>
+<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025145855848.png" alt="image-20221025145855848"></p>
  
       <!-- reward -->
       
@@ -667,7 +661,7 @@
 
     
     <article
-  id="post-图灵机与冯诺依曼结构"
+  id="post-计算思维"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -678,8 +672,8 @@
     <header class="article-header">
        
 <h2 itemprop="name">
-  <a class="article-title" href="/2023/02/05/%E5%9B%BE%E7%81%B5%E6%9C%BA%E4%B8%8E%E5%86%AF%E8%AF%BA%E4%BE%9D%E6%9B%BC%E7%BB%93%E6%9E%84/"
-    >图灵机与冯诺依曼结构</a> 
+  <a class="article-title" href="/2023/02/05/%E8%AE%A1%E7%AE%97%E6%80%9D%E7%BB%B4/"
+    >计算思维</a> 
 </h2>
  
 
@@ -687,7 +681,7 @@
     </header>
      
     <div class="article-meta">
-      <a href="/2023/02/05/%E5%9B%BE%E7%81%B5%E6%9C%BA%E4%B8%8E%E5%86%AF%E8%AF%BA%E4%BE%9D%E6%9B%BC%E7%BB%93%E6%9E%84/" class="article-date">
+      <a href="/2023/02/05/%E8%AE%A1%E7%AE%97%E6%80%9D%E7%BB%B4/" class="article-date">
   <time datetime="2023-02-05T03:47:16.000Z" itemprop="datePublished">2023-02-05</time>
 </a> 
   <div class="article-category">
@@ -698,23 +692,100 @@
       
     <div class="article-entry" itemprop="articleBody">
        
-  <h2 id="图灵机模型"><a href="#图灵机模型" class="headerlink" title="图灵机模型"></a>图灵机模型</h2><p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025134944918.png" alt="image-20221025134944918"></p>
-<p>改为数字是指指针把当前纸袋数字改写</p>
-<p>本图的程序将连续的1之后的0修改为1</p>
-<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025140315220.png" alt="image-20221025140315220"></p>
-<p>这是表示图</p>
-<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025140544377.png" alt="image-20221025140544377"></p>
-<p>这是作业</p>
-<p>b是空格,H是停止</p>
-<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025140742764.png" alt="image-20221025140742764"></p>
-<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025142851890.png" alt="image-20221025142851890"></p>
-<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025143202427.png" alt="image-20221025143202427"></p>
-<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025143514451.png" alt="image-20221025143514451"></p>
-<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025155841187.png" alt="image-20221025155841187"></p>
-<p>这个图就是哪边底下有东西哪边就是1</p>
-<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025145844113.png" alt="image-20221025145844113"></p>
-<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025145850682.png" alt="image-20221025145850682"></p>
-<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025145855848.png" alt="image-20221025145855848"></p>
+  <h2 id="计算思维"><a href="#计算思维" class="headerlink" title="计算思维"></a>计算思维</h2><p>将现实的问题模型化</p>
+<ul>
+<li>枚举法</li>
+<li>贪心法  DIJkstra(必考)</li>
+</ul>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017087.png" alt="image-20221101151748686"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017088.png" alt="image-20221101155527053"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017089.png" alt="image-20221101155555035"></p>
+<p>一旦该点被标记,就不再计算</p>
+<p>如果是相同的节点(1,2,3$1,2,4,3),要做比大小</p>
+<ul>
+<li><p>分治法</p>
+</li>
+<li><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017090.png" alt="image-20221101183847280"></p>
+</li>
+<li><p>动态规划法</p>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/28594231">汉诺塔怎么玩？这可能是最简单的方法了 - 知乎 (zhihu.com)</a></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AF%BC%E8%AE%BA/" rel="tag">-计算机导论</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-进制的转换"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2023/02/05/%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/"
+    >进制的转换</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2023/02/05/%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/" class="article-date">
+  <time datetime="2023-02-05T03:47:16.000Z" itemprop="datePublished">2023-02-05</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%BF%85%E4%BF%AE%E8%AF%BE/">必修课</a> / <a class="article-category-link" href="/categories/%E5%BF%85%E4%BF%AE%E8%AF%BE/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AF%BC%E8%AE%BA/">计算机导论</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="进制的转换"><a href="#进制的转换" class="headerlink" title="进制的转换"></a>进制的转换</h2><h3 id="各种进制转10"><a href="#各种进制转10" class="headerlink" title="各种进制转10"></a>各种进制转10</h3><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303051.png" alt="image-20221009191357718"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303052.png" alt="image-20221009191440495"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303053.png" alt="image-20221009191521203"></p>
+<h3 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h3><p>个位上是0,然后向左递增或向右递减</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303054.png" alt="image-20221009191944636"></p>
+<p><strong>以个位为0,为中心轴,向左侧递增,向右侧递减</strong></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303056.png" alt="image-20221009192318681"></p>
+<p>其他进制的转10进制以此类推</p>
+<h2 id="10进制转换为其他进制"><a href="#10进制转换为其他进制" class="headerlink" title="10进制转换为其他进制"></a>10进制转换为其他进制</h2><p><strong>整数部分为除,小数部分为乘,读取方向为数轴方向,整数↑,小数↓</strong></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303057.png" alt="image-20221009192502724"></p>
+<p>从下往上读取.</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303058.png" alt="image-20221009192639409"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303059.png" alt="image-20221009193112096"></p>
+<p>只要记住是反过来的就行</p>
+<h3 id="快速方法-高进制转2"><a href="#快速方法-高进制转2" class="headerlink" title="快速方法(高进制转2)"></a>快速方法(高进制转2)</h3><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303060.png" alt="image-20221009193250110"></p>
+<p>一变几就看是2的几次方,并且如果是首位或者末尾是0的话就省略掉</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303062.png" alt="image-20221009193536174"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303063.png" alt="image-20221009193709308"></p>
+<h3 id="二进制转高的话就从小数点位置开始划分"><a href="#二进制转高的话就从小数点位置开始划分" class="headerlink" title="二进制转高的话就从小数点位置开始划分"></a>二进制转高的话就从小数点位置开始划分</h3><p>每一个被划分出来的单元都是独立的</p>
+<p>如果是16转8的话就用2来做媒介,很快</p>
+<h4 id="并且将划分出来的数组用二进制转换法转换成数字"><a href="#并且将划分出来的数组用二进制转换法转换成数字" class="headerlink" title="并且将划分出来的数组用二进制转换法转换成数字"></a>并且将划分出来的数组用二进制转换法转换成数字</h4><p> H下标表示16进制</p>
+<p>B是二进制 O是八进制</p>
+<p>D是10进制</p>
  
       <!-- reward -->
       
@@ -790,77 +861,6 @@
 <p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947516.png" alt="image-20221025145844113"></p>
 <p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947517.png" alt="image-20221025145850682"></p>
 <p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947518.png" alt="image-20221025145855848"></p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AF%BC%E8%AE%BA/" rel="tag">-计算机导论</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
-    <article
-  id="post-计算思维"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/02/05/%E8%AE%A1%E7%AE%97%E6%80%9D%E7%BB%B4/"
-    >计算思维</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/02/05/%E8%AE%A1%E7%AE%97%E6%80%9D%E7%BB%B4/" class="article-date">
-  <time datetime="2023-02-05T03:47:16.000Z" itemprop="datePublished">2023-02-05</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%BF%85%E4%BF%AE%E8%AF%BE/">必修课</a> / <a class="article-category-link" href="/categories/%E5%BF%85%E4%BF%AE%E8%AF%BE/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AF%BC%E8%AE%BA/">计算机导论</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h2 id="计算思维"><a href="#计算思维" class="headerlink" title="计算思维"></a>计算思维</h2><p>将现实的问题模型化</p>
-<ul>
-<li>枚举法</li>
-<li>贪心法  DIJkstra(必考)</li>
-</ul>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017087.png" alt="image-20221101151748686"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017088.png" alt="image-20221101155527053"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017089.png" alt="image-20221101155555035"></p>
-<p>一旦该点被标记,就不再计算</p>
-<p>如果是相同的节点(1,2,3$1,2,4,3),要做比大小</p>
-<ul>
-<li><p>分治法</p>
-</li>
-<li><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017090.png" alt="image-20221101183847280"></p>
-</li>
-<li><p>动态规划法</p>
-</li>
-</ul>
-<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/28594231">汉诺塔怎么玩？这可能是最简单的方法了 - 知乎 (zhihu.com)</a></p>
  
       <!-- reward -->
       
@@ -960,7 +960,7 @@
   <time datetime="2023-02-04T12:40:53.000Z" itemprop="datePublished">2023-02-04</time>
 </a> 
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E7%A7%91%E6%8A%80%E5%88%86%E4%BA%AB%E7%BB%99/">科技分享给</a>
+    <a class="article-category-link" href="/categories/%E7%A7%91%E6%8A%80%E5%88%86%E4%BA%AB/">科技分享</a>
   </div>
    
     </div>

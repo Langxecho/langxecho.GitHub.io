@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>java学习流程概览</title>
+    <url>/2016/05/26/java%E5%AD%A6%E4%B9%A0%E6%B5%81%E7%A8%8B%E6%A6%82%E8%A7%88/</url>
+    <content><![CDATA[<h2 id="java学习流程概览"><a href="#java学习流程概览" class="headerlink" title="java学习流程概览"></a>java学习流程概览</h2><p>\n换行符，加在字符串内</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041638828.png" alt="image-20230204163843654"></p>
+]]></content>
+      <categories>
+        <category>java</category>
+        <category>java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo创建文件自动打开</title>
+    <url>/2023/02/04/hexo%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E8%87%AA%E5%8A%A8%E6%89%93%E5%BC%80/</url>
+    <content><![CDATA[<h2 id="如何在hexo创建新post文档之后自动打开"><a href="#如何在hexo创建新post文档之后自动打开" class="headerlink" title="如何在hexo创建新post文档之后自动打开"></a>如何在hexo创建新post文档之后自动打开</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo n &quot;The title of your blog&quot;</span><br></pre></td></tr></table></figure>
+
+<p>这个指令可以快速创建</p>
+<h3 id="实现创建后自动打开"><a href="#实现创建后自动打开" class="headerlink" title="实现创建后自动打开"></a>实现创建后自动打开</h3><ol>
+<li><p>新建<code>scripts</code>目录（hexo根目录）</p>
+</li>
+<li><p>创建<code>auto_open.js</code>文件,如下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">var spawn = require(&#x27;child_process&#x27;).exec;</span><br><span class="line">hexo.on(&#x27;new&#x27;, function(data)&#123;</span><br><span class="line">  spawn(&#x27;start  &quot;C:\Program Files\Typora\Typora.exe&quot; &#x27; + data.path);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>路径设置为你的软件路径即可</p>
+]]></content>
+      <categories>
+        <category>科技分享</category>
+      </categories>
+      <tags>
+        <tag>黑科技</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>git协作后总结</title>
     <url>/2023/02/01/git%E5%8D%8F%E4%BD%9C%E5%90%8E%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<p>直播后总结,以及部分github插件的涉及</p>
@@ -14,25 +49,72 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo介绍</title>
-    <url>/2017/05/26/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <title>js编程练习之变化的背景</title>
+    <url>/2023/02/04/js%E7%BC%96%E7%A8%8B%E7%BB%83%E4%B9%A0%E4%B9%8B%E5%8F%98%E5%8C%96%E7%9A%84%E8%83%8C%E6%99%AF/</url>
+    <content><![CDATA[<img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302042100009.png" alt="image-20230204210016349" style="zoom: 33%;" />
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
       <categories>
-        <category>本站の有趣☞言论</category>
+        <category>js基础</category>
+        <category>js练习</category>
       </categories>
+      <tags>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>jQuery对表单的操作及更多应用</title>
+    <url>/2017/05/26/%E4%BB%8A%E6%97%A5%E5%BB%BA%E7%AB%8B%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="今天建立了新的博客"><a href="#今天建立了新的博客" class="headerlink" title="今天建立了新的博客"></a>今天建立了新的博客</h2><p>不得不说hexo真的好用,可以说对新手非常友好了,但是还有一些尚不明确,代我探索探索</p>
+]]></content>
+      <categories>
+        <category>java</category>
+        <category>java领航</category>
+      </categories>
+      <tags>
+        <tag>ncie</tag>
+        <tag>yoku</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关键字与保留字</title>
+    <url>/2016/05/26/%E5%85%B3%E9%94%AE%E5%AD%97%E4%B8%8E%E4%BF%9D%E7%95%99%E5%AD%97/</url>
+    <content><![CDATA[<h2 id="关键字与保留字"><a href="#关键字与保留字" class="headerlink" title="关键字与保留字"></a>关键字与保留字</h2><p>定义：被Java语言赋予特殊含义，用作专门用途的字符串（单词）</p>
+<p>特点：关键字中所有字幕都为小写</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041633236.png" alt="image-20230204163315062"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041634382.png" alt="image-20230204163406278"></p>
+<p>灰色不算关键字但是能当关键字</p>
+<p>保留字：未来可能用，使用时要避开</p>
+]]></content>
+      <categories>
+        <category>java</category>
+        <category>java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>储存计量单位与数字存储方式</title>
+    <url>/2023/02/05/%E5%82%A8%E5%AD%98%E8%AE%A1%E9%87%8F%E5%8D%95%E4%BD%8D%E4%B8%8E%E6%95%B0%E5%AD%97%E5%AD%98%E5%82%A8%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051914419.png" alt="image-20221011135058964"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051914421.png" alt="image-20221011135348635"></p>
+<p>一个字节8位</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051914422.png" alt="image-20221011145133435"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051914423.png" alt="image-20221011145148312"><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051914424.png" alt="image-20221011145326002"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051914425.png" alt="image-20221011145440945">![image-20221011145442802](C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221011145442802.png</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051914426.png" alt="image-20221011145804543"><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051914427.png" alt="image-20221011150007809"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051914428.png" alt="image-20221011150506260"><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051914429.png" alt="image-20221011150513085"></p>
+<h3 id="乘法与除法和日常计算逻辑一样"><a href="#乘法与除法和日常计算逻辑一样" class="headerlink" title="乘法与除法和日常计算逻辑一样"></a>乘法与除法和日常计算逻辑一样</h3><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051927681.png" alt="image-20230205192730603"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051928775.png" alt="image-20230205192851689"></p>
+]]></content>
+      <categories>
+        <category>必修课</category>
+        <category>计算机导论</category>
+      </categories>
+      <tags>
+        <tag>-计算机导论</tag>
+      </tags>
   </entry>
   <entry>
     <title>分支语句2switchcase结构</title>
@@ -72,17 +154,312 @@
       </tags>
   </entry>
   <entry>
-    <title>jQuery对表单的操作及更多应用</title>
-    <url>/2017/05/26/%E4%BB%8A%E6%97%A5%E5%BB%BA%E7%AB%8B%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h2 id="今天建立了新的博客"><a href="#今天建立了新的博客" class="headerlink" title="今天建立了新的博客"></a>今天建立了新的博客</h2><p>不得不说hexo真的好用,可以说对新手非常友好了,但是还有一些尚不明确,代我探索探索</p>
+    <title>标识符与命名规范</title>
+    <url>/2016/05/26/%E5%8F%98%E9%87%8F%E7%9A%84%E5%88%86%E7%B1%BB/</url>
+    <content><![CDATA[<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041651934.png" alt="image-20230204165140864"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041651397.png" alt="image-20230204165146327"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041653542.png" alt="image-20230204165337404"></p>
+<p>float的范围比long还大，并且定义的数值后面要加F或f</p>
+<p>定义char（字符型）变量通常使用单引号</p>
+<p>char只能使用一个字符（等于两个字节）</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041654943.png" alt="image-20230204165401862"></p>
+<p>boolean变量 变量值只能取true或false,默认是false</p>
+<p>常常在条件判断与循环中使用</p>
+<p>tips:\n前面加.变为\n.就不再表示了,\的作用相当于转义.,\后的特殊符号不在表达含义</p>
+<p><strong>String</strong></p>
+<p>string不属于基本数据类型,他是引用数据类型</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041654630.png" alt="image-20230204165431567"></p>
 ]]></content>
       <categories>
         <category>java</category>
-        <category>java领航</category>
+        <category>java基础</category>
       </categories>
       <tags>
-        <tag>ncie</tag>
-        <tag>yoku</tag>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>标识符与命名规范</title>
+    <url>/2016/05/26/%E5%8F%98%E9%87%8F/</url>
+    <content><![CDATA[<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><p><strong>变量的概念：申请内存中的一个区域</strong></p>
+<p>​           该区域的数据可以在同一类型范围内不断变化</p>
+<p>​           变量是最基本的储存类型，包含变量名，变量类型和储存的值</p>
+<p><strong>变量用于在内存中保存数据</strong>  </p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041645262.png" alt="image-20230204164500193"></p>
+<p><strong>变量类型：整形，字符型浮点型</strong></p>
+<p>定义变量的格式 数据类型 变量名 = 变量值</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041645091.png" alt="image-20230204164521034"></p>
+<p>程序的读取顺序从上到下，先print后定义变量就不行</p>
+<p>一个大括号就是一个作用域，出了作用域之后变量不生效</p>
+<p><strong>同一个作用域内，不可以声明同名的两个变量</strong></p>
+<p>逆向思维，反证法，你不知道这个东西行不行，你就假设他行，然后去试试看(好低级的话)</p>
+]]></content>
+      <categories>
+        <category>java</category>
+        <category>java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>标识符与命名规范</title>
+    <url>/2016/05/26/%E5%8F%98%E9%87%8F%E8%BF%90%E7%AE%97%E8%A7%84%E5%88%99/</url>
+    <content><![CDATA[<h2 id="变量运算规则"><a href="#变量运算规则" class="headerlink" title="变量运算规则"></a>变量运算规则</h2><p>long l = 1323,此时没有后加L,但是仍然可以编译,是因为实际上把1323int型赋给了long型</p>
+<p>如果后面的值超过了int的值,就会出问题<img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041647873.png" alt="image-20230204164707790"></p>
+]]></content>
+      <categories>
+        <category>java</category>
+        <category>java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>图灵机与冯诺依曼结构</title>
+    <url>/2023/02/05/%E5%9B%BE%E7%81%B5%E6%9C%BA%E4%B8%8E%E5%86%AF%E8%AF%BA%E4%BE%9D%E6%9B%BC%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<h2 id="图灵机模型"><a href="#图灵机模型" class="headerlink" title="图灵机模型"></a>图灵机模型</h2><p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025134944918.png" alt="image-20221025134944918"></p>
+<p>改为数字是指指针把当前纸袋数字改写</p>
+<p>本图的程序将连续的1之后的0修改为1</p>
+<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025140315220.png" alt="image-20221025140315220"></p>
+<p>这是表示图</p>
+<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025140544377.png" alt="image-20221025140544377"></p>
+<p>这是作业</p>
+<p>b是空格,H是停止</p>
+<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025140742764.png" alt="image-20221025140742764"></p>
+<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025142851890.png" alt="image-20221025142851890"></p>
+<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025143202427.png" alt="image-20221025143202427"></p>
+<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025143514451.png" alt="image-20221025143514451"></p>
+<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025155841187.png" alt="image-20221025155841187"></p>
+<p>这个图就是哪边底下有东西哪边就是1</p>
+<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025145844113.png" alt="image-20221025145844113"></p>
+<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025145850682.png" alt="image-20221025145850682"></p>
+<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025145855848.png" alt="image-20221025145855848"></p>
+]]></content>
+      <categories>
+        <category>必修课</category>
+        <category>计算机导论</category>
+      </categories>
+      <tags>
+        <tag>-计算机导论</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>标识符与命名规范</title>
+    <url>/2016/05/26/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BF%90%E7%AE%97%E8%A7%84%E5%88%99/</url>
+    <content><![CDATA[<h2 id="基本数据类型之间的运算规则"><a href="#基本数据类型之间的运算规则" class="headerlink" title="基本数据类型之间的运算规则"></a>基本数据类型之间的运算规则</h2><p>1.自动类型提升<img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041655758.png" alt="image-20230204165521721"></p>
+<p>定义的结果变量的范围要大过数值否则就会丢失</p>
+<p>整型和浮点型也可以,只要数值在范围内即可</p>
+<p>低级往高级做运算应该往高级上去靠,并且整形的范围比浮点型的小 </p>
+<p>所以结论</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041655706.png" alt="image-20230204165529655"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041655612.png" alt="image-20230204165533567"></p>
+<p>char变量和容量小的变量做运算则比较特殊</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041655841.png" alt="image-20230204165541775"></p>
+<p>强制类型转换运算,是自动类型提升的逆运算</p>
+<p>在被重定义的数值前加()强转符</p>
+<p>损失的小数点称为截断操作</p>
+<p><img src="C:/Users/19086/AppData/Roaming/Typora/typora-user-images/image-20230204165556547.png" alt="image-20230204165556547"></p>
+]]></content>
+      <categories>
+        <category>java</category>
+        <category>java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>标识符与命名规范</title>
+    <url>/2016/05/26/%E5%B8%B8%E7%94%A8%E7%9A%84dos%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h2 id="常用的dos命令"><a href="#常用的dos命令" class="headerlink" title="常用的dos命令"></a>常用的dos命令</h2><p>dir： 列出当前目录下的文件以及文件夹</p>
+<p>md：创建目录</p>
+<p>rd：删除目录</p>
+<p>cd：进入指定目录</p>
+<p>cd..:退回到上一级目录</p>
+<p>cd:退回到根目录</p>
+<p>del：删除文件</p>
+<p>exit：推出dos命令</p>
+<p> 补充：echo javase&gt;1.doc     echo 内容&gt;（&gt;代表到）文件名.doc</p>
+<p>批量删除同类型文件文件名用*号，如del *.doc</p>
+<p>del选择文件夹删除的是文件夹中的文件</p>
+<p>左右键移动光标</p>
+<p>上下键</p>
+]]></content>
+      <categories>
+        <category>java</category>
+        <category>java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>大一第一学期数据库期末复习大纲</title>
+    <url>/2023/02/06/%E5%A4%A7%E4%B8%80%E7%AC%AC%E4%B8%80%E5%AD%A6%E6%9C%9F%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E5%A4%A7%E7%BA%B2/</url>
+    <content><![CDATA[<h2 id="数据模型与概念模型"><a href="#数据模型与概念模型" class="headerlink" title="数据模型与概念模型"></a>数据模型与概念模型</h2><p>信息世界通过概念模型进行描述,而计算机世界则是通过数据模型进行描述</p>
+<p><strong>概念模型相关的概念:</strong></p>
+<p>对象:类似与java中的类</p>
+<p>实例:实体</p>
+<p>属性:实体某一方面特征的抽象展示</p>
+<p>码,主码,次码:唯一标识一个实体的属性或者属性组,不能唯一标识的为次码</p>
+<p>实体集之间的联系:</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302062200686.png" alt="image-20230206220046334"></p>
+<p>数字的标法即为从箭头的根部来标,数字为这个箭头根部的对应关系,如<strong>教师n→学校</strong></p>
+<h4 id="E-R图"><a href="#E-R图" class="headerlink" title="E-R图"></a>E-R图</h4><p>长方形写实体集,圆形为属性,菱形为联系</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302062209080.png" alt="image-20230206220925012"></p>
+<p><strong>er转化为关系模型</strong></p>
+<img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071004965.png" alt="image-20230207100443658" style="zoom:50%;" />
+
+<p>以本图为例</p>
+<p>合并到实体时,保留自身的属性,添加关系的码和另一个实体的码(问题就在于这个关系的码,回头得弄明白)</p>
+<p>合并到关系时,保留自身的属性,添加左右两个实体的码,并且将两个码合并,作为自身的码</p>
+<p>合并写法</p>
+<p>使用(方法,<u>姓名,卡号</u>)(也就是把码用横线标出)</p>
+<p>学生(<u>姓名</u>,班级,卡号…………)</p>
+<h2 id="数据库代码部分"><a href="#数据库代码部分" class="headerlink" title="数据库代码部分"></a>数据库代码部分</h2><h4 id="查看当前所有数据库"><a href="#查看当前所有数据库" class="headerlink" title="查看当前所有数据库"></a>查看当前所有数据库</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">show databases;</span><br></pre></td></tr></table></figure>
+
+<h4 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create database 数据库名;</span><br></pre></td></tr></table></figure>
+
+<h4 id="切换字符集"><a href="#切换字符集" class="headerlink" title="切换字符集"></a>切换字符集</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">alter database 数据库名 character set 字符集名</span><br></pre></td></tr></table></figure>
+
+<h4 id="创建基本表"><a href="#创建基本表" class="headerlink" title="创建基本表"></a>创建基本表</h4><p>表结构就是定义一个表的字段、类型、主键、外键、索引</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create table 表名(</span><br><span class="line"></span><br><span class="line">列名 数据类型  约束条件,</span><br><span class="line"></span><br><span class="line">列名 数据类型  约束条件,</span><br><span class="line"></span><br><span class="line">);</span><br><span class="line">约束条件有 PRIMARY KEY设置主键</span><br><span class="line">NOT NULL 非空(不设置这个留空为null,设置了之后不可留空)</span><br><span class="line">unique数据不重复</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071023375.png" alt="image-20230207102312335"></p>
+<p>unsigned标识只能为0-255的整数,default指定默认值</p>
+<h4 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">drop database 数据库名;</span><br></pre></td></tr></table></figure>
+
+<h4 id="设置字段默认值"><a href="#设置字段默认值" class="headerlink" title="设置字段默认值"></a>设置字段默认值</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ALTER TABLE 表名 ALTER 字段名 SET DEFAULT 默认值;</span><br></pre></td></tr></table></figure>
+
+<h4 id="修改字段的条件与属性"><a href="#修改字段的条件与属性" class="headerlink" title="修改字段的条件与属性"></a>修改字段的条件与属性</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">alter table 数据库名 modify 字段名 数据类型 约束条件;</span><br></pre></td></tr></table></figure>
+
+<h4 id="插入数值语句"><a href="#插入数值语句" class="headerlink" title="插入数值语句"></a>插入数值语句</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">第一种：INSERT INTO 表名 (column1, column2, column3, ...)</span><br><span class="line">VALUES (value1, value2, value3, ...);</span><br><span class="line"></span><br><span class="line">第二种：INSERT INTO 表名</span><br><span class="line">VALUES (value1, value2, value3, ...);</span><br></pre></td></tr></table></figure>
+
+<h4 id="删除与增加主键"><a href="#删除与增加主键" class="headerlink" title="删除与增加主键"></a>删除与增加主键</h4><p>注意,主键不为空,不重复</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">alter table 表名 drop primary key;</span><br><span class="line"></span><br><span class="line">alter table 表名 add primary key(字段,字段...);</span><br></pre></td></tr></table></figure>
+
+<h4 id="自动增长"><a href="#自动增长" class="headerlink" title="自动增长"></a>自动增长</h4><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071055996.png" alt="image-20230207105549891"></p>
+<p>约束条件auto_increment</p>
+<p>注意一下图片里的这个语句</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071058245.png" alt="image-20230207105829182"></p>
+<p>自增的值可以自定义</p>
+<h4 id="展示表结构"><a href="#展示表结构" class="headerlink" title="展示表结构"></a>展示表结构</h4><p>desc 表名;<img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071100360.png" alt="image-20230207110033297"></p>
+<h4 id="改表名-字段名-字段类型"><a href="#改表名-字段名-字段类型" class="headerlink" title="改表名,字段名,字段类型"></a>改表名,字段名,字段类型</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">alter table 表名1 rename to 表名2;(改表名)</span><br><span class="line"></span><br><span class="line">alter table 表名 change 字段名1 字段名2 数值类型;</span><br></pre></td></tr></table></figure>
+
+<h4 id="添加-删除字段"><a href="#添加-删除字段" class="headerlink" title="添加,删除字段"></a>添加,删除字段</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">alter table 表名 add 字段名 数据类型;</span><br><span class="line">alter table 表名 drop 字段名;</span><br></pre></td></tr></table></figure>
+
+<h4 id="删除表"><a href="#删除表" class="headerlink" title="删除表"></a>删除表</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">drop table 表名; 完全删除</span><br><span class="line"></span><br><span class="line">delete from 表名; 只删除数据</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="批量修改表中数据"><a href="#批量修改表中数据" class="headerlink" title="批量修改表中数据"></a>批量修改表中数据</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">update 表名 set 字段名=表达式,字段名=表达式....;</span><br></pre></td></tr></table></figure>
+
+<p>示例:<img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071435609.png" alt="image-20230207143507522" style="zoom:50%;" /></p>
+<img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071435681.png" alt="image-20230207143515623" style="zoom:50%;" />
+
+<h4 id="简单查询-单表-SELECT"><a href="#简单查询-单表-SELECT" class="headerlink" title="简单查询-单表(SELECT)"></a>简单查询-单表(SELECT)</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">括号内的即为顺序</span><br><span class="line">select 目标字段|字段表达式或函数 from 数据源 (where) (group by) (having) (order by)</span><br><span class="line">其中目标字段用*代表全部</span><br><span class="line"></span><br><span class="line">select distinct classname from stu;这里的distinct可以折叠重复的字段</span><br><span class="line"></span><br><span class="line">算数操作符:+ - * / %(取模)</span><br></pre></td></tr></table></figure>
+
+<p>下面提供一些案例,其中包含重要的知识点,慢慢看</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071448456.png" alt="image-20230207144830256"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071448577.png" alt="image-20230207144847433"></p>
+<h2 id="查表与子查询相关知识点"><a href="#查表与子查询相关知识点" class="headerlink" title="查表与子查询相关知识点"></a>查表与子查询相关知识点</h2><p>and 和 or 连接多个表达式</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">select 学号 from 选课 where 课程号 = &#x27;c04&#x27; and 成绩 &gt; 90</span><br></pre></td></tr></table></figure>
+
+<p>and是两个条件都满足</p>
+<p>or是两个条件满足其中之一就行</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501285.png" alt="image-20221118143140498"></p>
+<p>in后面代表的是集合,里面得是同类型的东西</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">between xx and xx检索一个范围(整数),并且这是一个闭区间</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501286.png" alt="image-20221118143653861"></p>
+<p>like语句</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">select * from stu where sanme like &#x27;王%&#x27;;(%替代很多个)</span><br><span class="line"></span><br><span class="line">select * from stu where sanme like &#x27;王_&#x27;;(_替代一个)</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501287.png" alt="image-20221118145605265"></p>
+<p>如此以查找含有名字的</p>
+<h3 id="内联查询"><a href="#内联查询" class="headerlink" title="内联查询"></a>内联查询</h3><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501288.png" alt="image-20221118160657657"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501289.png" alt="image-20221118160756250"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501290.png" alt="image-20221118160848438"></p>
+<p>当两个表有同一个字段时,需要加表前缀加以区分</p>
+<h4 id="自然连接"><a href="#自然连接" class="headerlink" title="自然连接"></a>自然连接</h4><p>join前加nature,两个字段必须同名并且会自动折叠同名的部分,原来那个字段名不必一样,但是内容得一样</p>
+<h4 id="外连接"><a href="#外连接" class="headerlink" title="外连接"></a>外连接</h4><p>左外连接和右外连接分别全部输出左边的数据与右边的数据,</p>
+<p>1、两者的分类不同：内连接分为相等连接和自然连接两种连接方式；而外连接分为左外连接、右外连接和全外连接三种连接方式（左外连接即LEFT OUTER JOIN；右外连接即RIGHT OUTER JOIN）。</p>
+<p>2、两者所连接的对象表不同：内连接进行连接的两个表是对应的相匹配的字段完全相同的。左外连接中进行连接的两个表会返回左边表中的所有的行和右边表中与之相匹配的列值，没有相匹配的用空值代替。右外连接中进行连接的两个表会返回右边表中的所有的行和左边表中与之相匹配的列值，没有相匹配的用空值代替。</p>
+<p>3、两者的作用范围不同：内连接的连接发生在一张基表内，而外连接的连接发生在两张表之间。</p>
+<p>注：内连接（典型的连接运算，使用像 =  或 &lt;&gt; 之类的比较运算符）。包括相等连接和自然连接。内连接使用比较运算符根据每个表共有的列的值匹配两个表中的行。例如，检索 students和courses表中学生标识号相同的所有行。</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501291.png" alt="image-20221125144025429"></p>
+<h4 id="自链接"><a href="#自链接" class="headerlink" title="自链接"></a>自链接</h4><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501292.png" alt="image-20221125144713254"></p>
+<p>a,b取别名,可以简化操作,学着点    <img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501293.png" alt="image-20221125145212936"></p>
+<p>3表连接,超级加倍</p>
+<h4 id="升序降序"><a href="#升序降序" class="headerlink" title="升序降序"></a>升序降序</h4><p>select * from xx order by 成绩 desc(降序)asc(升序)</p>
+<h4 id="嵌套查询-子查询"><a href="#嵌套查询-子查询" class="headerlink" title="嵌套查询-子查询"></a>嵌套查询-子查询</h4><p>in语句</p>
+<p>select 学号,姓名 from 学生 where 学号 not in (select 学号 from 选课);</p>
+<p>子查询的括号前面必须要in或者=&lt;&gt;之类的</p>
+<p>in表示范围内的数据</p>
+<p>where 年龄 &gt;(select 年龄 from 学生 where xxx<img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501294.png" alt="image-20221125165358705">)</p>
+<h4 id="运算符的子查询"><a href="#运算符的子查询" class="headerlink" title="运算符的子查询"></a>运算符的子查询</h4><p>selec xxx from xx where sex = ‘x’ and age &gt;(select xx from xx where name)</p>
+<h5 id="any-与all"><a href="#any-与all" class="headerlink" title="any 与all"></a>any 与all</h5><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501296.png" alt="image-20221202134716965"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501297.png" alt="image-20221202134925838"></p>
+<h5 id="exist"><a href="#exist" class="headerlink" title="exist"></a>exist</h5><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501298.png" alt="image-20221202140026009"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501299.png" alt="image-20221202140230801"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501300.png" alt="image-20221202141433864"></p>
+<p>字段相等也并不是一定要链接</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501301.png" alt="image-20221202143544431"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501302.png" alt="image-20221202144457063"></p>
+<h4 id="分组查询"><a href="#分组查询" class="headerlink" title="分组查询"></a>分组查询</h4><p>group by</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501303.png" alt="image-20221202145747995"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501304.png" alt="image-20221202145946599"></p>
+<h4 id="having语句"><a href="#having语句" class="headerlink" title="having语句"></a>having语句</h4><p>对分组后的语句经行条件的筛选就用having</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501305.png" alt="image-20221202150916501"></p>
+<p>having后还能加order by</p>
+<h2 id="sql视图"><a href="#sql视图" class="headerlink" title="sql视图"></a>sql视图</h2><p>视图的作用</p>
+<p>简化用户的操作</p>
+<p>创建视图</p>
+<p>create view 视图名 (字段名列表) as 子查询 with check option</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071508862.png" alt="image-20221202160721007"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071508863.png" alt="image-20221202160824790"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071508864.png" alt="image-20221202161103904"></p>
+<h3 id="视图的更新"><a href="#视图的更新" class="headerlink" title="视图的更新"></a>视图的更新</h3><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071508865.png" alt="image-20221202162335837"></p>
+<p>with check option的作用创建的视图中字段设有where条件,当有check option的时候插入非法字符就会报错,插入的东西或是修改的东西在基表里,但是修改视图的同时也修改了基表</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071508866.png" alt="image-20221202165306489"> </p>
+<h3 id="删除视图"><a href="#删除视图" class="headerlink" title="删除视图"></a>删除视图</h3><p>drop view 视图名</p>
+<h2 id="触发器"><a href="#触发器" class="headerlink" title="触发器"></a>触发器</h2><p>create trigger 触发器名 (before/after) (insert update delete) on 表名 for each row 触发器主体</p>
+<h3 id="触发器主体"><a href="#触发器主体" class="headerlink" title="触发器主体"></a>触发器主体</h3><p>begin</p>
+<p>aql语句;</p>
+<p>end;</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071508867.png" alt="image-20221209141407789"></p>
+<h3 id="new与old实现数据库完整性约束"><a href="#new与old实现数据库完整性约束" class="headerlink" title="new与old实现数据库完整性约束"></a>new与old实现数据库完整性约束</h3><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071508868.png" alt="image-20221209143903180"></p>
+<h2 id="查看与删除触发器"><a href="#查看与删除触发器" class="headerlink" title="查看与删除触发器"></a>查看与删除触发器</h2><p>drop trigger </p>
+<p>show trigg</p>
+<h2 id="遗留下来的一些奇怪的东西"><a href="#遗留下来的一些奇怪的东西" class="headerlink" title="遗留下来的一些奇怪的东西"></a>遗留下来的一些奇怪的东西</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DELIMITER $$</span><br><span class="line">CREATE TRIGGER t_ww AFTER UPDATE ON worker FOR EACH ROW</span><br><span class="line">BEGIN</span><br><span class="line">IF new.age &gt; 60 THEN</span><br><span class="line">UPDATE worker SET new.age = old.age;</span><br><span class="line">END IF;</span><br><span class="line">END;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="关系模型的三类完整性约束"><a href="#关系模型的三类完整性约束" class="headerlink" title="关系模型的三类完整性约束"></a>关系模型的三类完整性约束</h4><p>实体完整性  通过主键的约束保证不重复</p>
+<p>参照完整性 通过外键的管理保证标与表之间数据的完整性</p>
+<p>自定义完整性 自定义扳机</p>
+<h4 id="关系的运算"><a href="#关系的运算" class="headerlink" title="关系的运算"></a>关系的运算</h4><p>σF(),F是下标,代表查询的条件,括号内为表,f相当于where,f可替换为 addr = ‘xxx’</p>
+<p>投影运算 Πsno,sname()下标,仅搜索下标的列</p>
+<h2 id="涉及到的题目"><a href="#涉及到的题目" class="headerlink" title="涉及到的题目"></a>涉及到的题目</h2><p>(所有的这些题目选择题也写一写)</p>
+<p>12  2 3 5</p>
+<p>27  第二个</p>
+<p>28 第四个</p>
+<p>28,29,30问答题 </p>
+<p>48 第一题,第三题,</p>
+<p>73 第二题,第四题</p>
+<p>95 第十二(第五章)</p>
+<p>第六章分几乎占一半(直接或间接)</p>
+<p>153 1 2 3</p>
+<p>155 22题</p>
+<p>193 做了解</p>
+]]></content>
+      <categories>
+        <category>必修课</category>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>-数据库</tag>
       </tags>
   </entry>
   <entry>
@@ -298,6 +675,48 @@
       </tags>
   </entry>
   <entry>
+    <title>java学习流程概览</title>
+    <url>/2016/05/26/%E6%B3%A8%E9%87%8A/</url>
+    <content><![CDATA[<h2 id="注释的规范"><a href="#注释的规范" class="headerlink" title="注释的规范"></a>注释的规范</h2><p>//单行注释：如下的语句表示输出到控制台xxxxxxxxxxxx</p>
+<p>//后的内容读代码不会读</p>
+<p>多行注释</p>
+<p>/*多行注释：xxxxxxxxxxxxxx</p>
+<p>xxxxxxxxx*/</p>
+<p>注释用来解释说明代码，方便你自己，以免你自己不懂</p>
+<p>注释可能出错的代码，然后运行，发现不报错那就是注释的地方错了，方便你排查</p>
+<p>生成的字节码文件不包含注释的信息</p>
+<p>文档注释/** */</p>
+<p>启用方法</p>
+<p>javadoc -d 创立的文件名 -author -version xxx.java(你所写的类） 编译出来的html只能够提取文档注释，文档注释中</p>
+<p>@author xxxxxx</p>
+<p>@version xxxxxxx</p>
+<p>注意：多行注释不可以嵌套使用</p>
+]]></content>
+      <categories>
+        <category>java</category>
+        <category>java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>标识符与命名规范</title>
+    <url>/2016/05/26/%E6%A0%87%E8%AF%86%E7%AC%A6%E4%B8%8E%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83--%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/</url>
+    <content><![CDATA[<h2 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h2><p>可以起名字的地方都叫标识符</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041641794.png" alt="image-20230204164138728"></p>
+<h2 id="命名规范"><a href="#命名规范" class="headerlink" title="命名规范"></a>命名规范</h2><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041642126.png" alt="image-20230204164209044"></p>
+<p>java设置名字要见名知意，不要自己搞自己</p>
+]]></content>
+      <categories>
+        <category>java</category>
+        <category>java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>特殊关键词的使用(break与continue)</title>
     <url>/2017/05/26/%E7%89%B9%E6%AE%8A%E5%85%B3%E9%94%AE%E5%AD%97%E7%9A%84%E4%BD%BF%E7%94%A8break&amp;contine/</url>
     <content><![CDATA[<h2 id="特殊关键字的使用-break与continue"><a href="#特殊关键字的使用-break与continue" class="headerlink" title="特殊关键字的使用(break与continue)"></a>特殊关键字的使用(break与continue)</h2><p>  <img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281555945.png" alt="image-20221022134051259"></p>
@@ -345,6 +764,211 @@
       </categories>
       <tags>
         <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>算数运算符的使用</title>
+    <url>/2017/05/26/%E7%AE%97%E6%95%B0%E8%BF%90%E7%AE%97%E7%AC%A6%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="算数运算符"><a href="#算数运算符" class="headerlink" title="算数运算符"></a>算数运算符</h2><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281553513.png" alt="image-20221012101401291"></p>
+<h3 id="符号运算的注意点"><a href="#符号运算的注意点" class="headerlink" title="符号运算的注意点"></a>符号运算的注意点</h3><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281553366.png" alt="image-20221012102808342"></p>
+<p>所以说提升运算与强制转换运算十分重要</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281553100.png" alt="image-20221012103238704">最终被模数的符号和去出来的余是一样的</p>
+<p>开发中经常用%来判断能否被整除<img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554441.png" alt="image-20221012103738982"><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554172.png" alt="image-20221012104035454"></p>
+<p>自增是在表明的变量上加1</p>
+<p>前自增先自增后赋值</p>
+<p>后自增先赋值后自增</p>
+<p>自增一不会改变自身变量的类型</p>
+<h2 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h2><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554391.png" alt="image-20221012111406124"><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554595.png" alt="image-20221012111541561"><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221012111653469.png" alt="image-20221012111653469"></p>
+<p>注意,这里的等号是赋值,+=可以理解为赋值＋2</p>
+<p>一样的还有-=   %=</p>
+<p>这种写法不会改变变量本身的数据类型</p>
+<p>用定义的话会自动提升</p>
+<p>比如</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">short s = <span class="number">10</span></span><br><span class="line">short a = s+<span class="number">1</span></span><br><span class="line"><span class="comment">//因为1是整形</span></span><br><span class="line"><span class="comment">//所以a会变成int值从而导致出错</span></span><br><span class="line">如果用++就没问题</span><br></pre></td></tr></table></figure>
+
+<h2 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h2><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554917.png" alt="image-20221012134612382"></p>
+<p>注意,输出的结果都是布尔类型</p>
+<p>注意=与==号的区别</p>
+<h2 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h2><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554936.png" alt="image-20221012140310668"></p>
+<h4 id="逻辑和短路的区别"><a href="#逻辑和短路的区别" class="headerlink" title="逻辑和短路的区别"></a>逻辑和短路的区别</h4><p>逻辑前后都会执行,而短路如果前面的条件已经判定不会执行了,那么后面的程序也不会执行了</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554730.png" alt="image-20221012192114465"></p>
+<p> <img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554716.png" alt="image-20221012192236261"></p>
+<pre><code>## 位运算符
+</code></pre>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554250.png" alt="image-20221012193101596"></p>
+<p> <img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554602.png" alt="image-20221012193045786"></p>
+<h4 id="这个用的比较少-为了加速学习这里不做详细说明-详情参考-day03-15"><a href="#这个用的比较少-为了加速学习这里不做详细说明-详情参考-day03-15" class="headerlink" title="这个用的比较少,为了加速学习这里不做详细说明,详情参考 day03  15"></a>这个用的比较少,为了加速学习这里不做详细说明,详情参考 day03  15</h4><h3 id="交换两个变量的值"><a href="#交换两个变量的值" class="headerlink" title="交换两个变量的值"></a>交换两个变量的值</h3><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554934.png" alt="image-20221012193955300"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554429.png" alt="image-20221012194006274"></p>
+<h2 id="三元运算符"><a href="#三元运算符" class="headerlink" title="三元运算符"></a>三元运算符</h2><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554853.png" alt="image-20221012194255682"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554226.png" alt="image-20221014075825076"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281555850.png" alt="image-20221014075949565"></p>
+<p>不相同的类型可以统一为一个结果 ,表达式1和表达式2必须是一致的<img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281555129.png" alt="image-20221014080441296"></p>
+<p>凡是可以使用三元运算符的地方都可以使用if,else结构</p>
+<p>如果两种结构都可以使用,那么优先选择三元运算符,因为他简洁又高效</p>
+<h2 id="运算符的优先级"><a href="#运算符的优先级" class="headerlink" title="运算符的优先级"></a>运算符的优先级</h2><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281555129.png" alt="image-20221014081357625"></p>
+<p>看似复杂,实际使用中只要用好小括号就行</p>
+]]></content>
+      <categories>
+        <category>java</category>
+        <category>java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算思维-算法基础</title>
+    <url>/2023/02/05/%E8%AE%A1%E7%AE%97%E6%80%9D%E7%BB%B4-%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017405.png" alt="image-20221108133720384"></p>
+<h3 id="算法的基本特征"><a href="#算法的基本特征" class="headerlink" title="算法的基本特征"></a>算法的基本特征</h3><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017406.png" alt="image-20221108133952706"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017407.png" alt="image-20221108134138624"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017408.png" alt="image-20221108134230268"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017409.png" alt="image-20221108134427011"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017410.png" alt="image-20221108134542010"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017411.png" alt="image-20221108135442184"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017412.png" alt="image-20221108140337883"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017413.png" alt="image-20221108140750921"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017414.png" alt="image-20221108141501966"><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017415.png" alt="image-20221108142313953"></p>
+<p><strong>冒泡算法</strong></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017416.png" alt="image-20221108145442658"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017417.png" alt="image-20221108145629290"></p>
+<p>插空算法</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017418.png" alt="image-20221108150700648"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017419.png" alt="image-20221108154926039"></p>
+<p>二分查找法</p>
+<p>具体见第六章55页</p>
+]]></content>
+      <categories>
+        <category>必修课</category>
+        <category>计算机导论</category>
+      </categories>
+      <tags>
+        <tag>-计算机导论</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算思维</title>
+    <url>/2023/02/05/%E8%AE%A1%E7%AE%97%E6%80%9D%E7%BB%B4/</url>
+    <content><![CDATA[<h2 id="计算思维"><a href="#计算思维" class="headerlink" title="计算思维"></a>计算思维</h2><p>将现实的问题模型化</p>
+<ul>
+<li>枚举法</li>
+<li>贪心法  DIJkstra(必考)</li>
+</ul>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017087.png" alt="image-20221101151748686"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017088.png" alt="image-20221101155527053"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017089.png" alt="image-20221101155555035"></p>
+<p>一旦该点被标记,就不再计算</p>
+<p>如果是相同的节点(1,2,3$1,2,4,3),要做比大小</p>
+<ul>
+<li><p>分治法</p>
+</li>
+<li><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017090.png" alt="image-20221101183847280"></p>
+</li>
+<li><p>动态规划法</p>
+</li>
+</ul>
+<p><a href="https://zhuanlan.zhihu.com/p/28594231">汉诺塔怎么玩？这可能是最简单的方法了 - 知乎 (zhihu.com)</a></p>
+]]></content>
+      <categories>
+        <category>必修课</category>
+        <category>计算机导论</category>
+      </categories>
+      <tags>
+        <tag>-计算机导论</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>进制的转换</title>
+    <url>/2023/02/05/%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/</url>
+    <content><![CDATA[<h2 id="进制的转换"><a href="#进制的转换" class="headerlink" title="进制的转换"></a>进制的转换</h2><h3 id="各种进制转10"><a href="#各种进制转10" class="headerlink" title="各种进制转10"></a>各种进制转10</h3><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303051.png" alt="image-20221009191357718"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303052.png" alt="image-20221009191440495"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303053.png" alt="image-20221009191521203"></p>
+<h3 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h3><p>个位上是0,然后向左递增或向右递减</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303054.png" alt="image-20221009191944636"></p>
+<p><strong>以个位为0,为中心轴,向左侧递增,向右侧递减</strong></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303056.png" alt="image-20221009192318681"></p>
+<p>其他进制的转10进制以此类推</p>
+<h2 id="10进制转换为其他进制"><a href="#10进制转换为其他进制" class="headerlink" title="10进制转换为其他进制"></a>10进制转换为其他进制</h2><p><strong>整数部分为除,小数部分为乘,读取方向为数轴方向,整数↑,小数↓</strong></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303057.png" alt="image-20221009192502724"></p>
+<p>从下往上读取.</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303058.png" alt="image-20221009192639409"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303059.png" alt="image-20221009193112096"></p>
+<p>只要记住是反过来的就行</p>
+<h3 id="快速方法-高进制转2"><a href="#快速方法-高进制转2" class="headerlink" title="快速方法(高进制转2)"></a>快速方法(高进制转2)</h3><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303060.png" alt="image-20221009193250110"></p>
+<p>一变几就看是2的几次方,并且如果是首位或者末尾是0的话就省略掉</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303062.png" alt="image-20221009193536174"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303063.png" alt="image-20221009193709308"></p>
+<h3 id="二进制转高的话就从小数点位置开始划分"><a href="#二进制转高的话就从小数点位置开始划分" class="headerlink" title="二进制转高的话就从小数点位置开始划分"></a>二进制转高的话就从小数点位置开始划分</h3><p>每一个被划分出来的单元都是独立的</p>
+<p>如果是16转8的话就用2来做媒介,很快</p>
+<h4 id="并且将划分出来的数组用二进制转换法转换成数字"><a href="#并且将划分出来的数组用二进制转换法转换成数字" class="headerlink" title="并且将划分出来的数组用二进制转换法转换成数字"></a>并且将划分出来的数组用二进制转换法转换成数字</h4><p> H下标表示16进制</p>
+<p>B是二进制 O是八进制</p>
+<p>D是10进制</p>
+]]></content>
+      <categories>
+        <category>必修课</category>
+        <category>计算机导论</category>
+      </categories>
+      <tags>
+        <tag>-计算机导论</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机导论大一上复习计划大纲</title>
+    <url>/2023/02/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AF%BC%E8%AE%BA%E5%A4%A7%E4%B8%80%E4%B8%8A%E5%A4%8D%E4%B9%A0%E8%AE%A1%E5%88%92%E5%A4%A7%E7%BA%B2/</url>
+    <content><![CDATA[<h2 id="第一章-认识计算机"><a href="#第一章-认识计算机" class="headerlink" title="第一章-认识计算机"></a>第一章-认识计算机</h2><h4 id="O-计算、计算机、计算思维的定义和区别"><a href="#O-计算、计算机、计算思维的定义和区别" class="headerlink" title="Ø 计算、计算机、计算思维的定义和区别"></a>Ø 计算、计算机、计算思维的定义和区别</h4><p><strong>计算</strong></p>
+<p>计算是一种将[单一或多个的输入值]转换为[单一或多个结果]的思考过程</p>
+<p><strong>自动计算要解决的几个问题:表示-存储-执行</strong></p>
+<p>“数据”的表示</p>
+<p>“计算规则”的表示:程序</p>
+<p>数据与计算规则的“自动存储”计算规则的“自动执行”</p>
+<p><strong>计算思维要素</strong></p>
+<p><strong>分解</strong>:把数据,过程或问题分解为更小的,更易于管理的部分</p>
+<p><strong>模式识别</strong>:观察数据的模式、趋势和规律。</p>
+<p><strong>抽象</strong>:识别模式形成背后的一般原理。</p>
+<p><strong>算法设计</strong>:为解决某一类问题撰写一系列详细步骤。</p>
+<h4 id="O-第一部通用电子计算机、第一个微处理器"><a href="#O-第一部通用电子计算机、第一个微处理器" class="headerlink" title="Ø 第一部通用电子计算机、第一个微处理器"></a>Ø 第一部通用电子计算机、第一个微处理器</h4><p>第一部通用电子计算机:<em><strong>ENIAC</strong></em></p>
+<p>第一个微处理器:<strong>INTEL4004</strong></p>
+<h4 id="计算机的发展（计算机发展的四个阶段）"><a href="#计算机的发展（计算机发展的四个阶段）" class="headerlink" title="计算机的发展（计算机发展的四个阶段）"></a>计算机的发展（计算机发展的四个阶段）</h4><ul>
+<li>第一代计算机（1946-1957年）–电子管时代</li>
+<li>第二代计算机（1958-1964年）–晶体管时代</li>
+<li>第三代计算机（1965-1971年）–中小规模集成电路时代</li>
+<li>第四代计算机（1972年至今）–超大规模集成电路时代。</li>
+</ul>
+<hr>
+<h2 id="第二章：进制表示与信息编码"><a href="#第二章：进制表示与信息编码" class="headerlink" title="第二章：进制表示与信息编码"></a>第二章：进制表示与信息编码</h2><h4 id="进制的转换"><a href="#进制的转换" class="headerlink" title="进制的转换"></a>进制的转换</h4><p><strong>参考文章</strong>:<a href="/2023/02/05/%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/" title="进制的转换">进制的转换</a></p>
+<h4 id="O-原码、反码、补码的计算"><a href="#O-原码、反码、补码的计算" class="headerlink" title="Ø 原码、反码、补码的计算"></a>Ø 原码、反码、补码的计算</h4><p><strong>参考文章</strong>:<a href="/2023/02/05/%E5%82%A8%E5%AD%98%E8%AE%A1%E9%87%8F%E5%8D%95%E4%BD%8D%E4%B8%8E%E6%95%B0%E5%AD%97%E5%AD%98%E5%82%A8%E6%96%B9%E5%BC%8F/" title="储存计量单位与数字存储方式">储存计量单位与数字存储方式</a></p>
+<h4 id="O-浮点数SeM的表示"><a href="#O-浮点数SeM的表示" class="headerlink" title="Ø 浮点数SeM的表示"></a>Ø 浮点数SeM的表示</h4><p>这个东西各种原因这里不做说明,详情请看第二章第69页的ppt,不过不建议看</p>
+<h4 id="O-ASCII码、国标码、Unicode码的定义"><a href="#O-ASCII码、国标码、Unicode码的定义" class="headerlink" title="Ø ASCII码、国标码、Unicode码的定义"></a>Ø ASCII码、国标码、Unicode码的定义</h4><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051936546.png" alt="image-20230205193615446" style="zoom:25%;" /><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051937493.png" alt="image-20230205193740403" style="zoom:25%;" /></p>
+<p><strong>国标码</strong>:注意,一个汉字由两个字节表示(一个字节8个bit)</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051940616.png" alt="image-20230205194041565"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051940884.png" alt="image-20230205194056832"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051941305.png" alt="image-20230205194112260"></p>
+<p><strong>unicode</strong>:<strong>Unicode为世界上所有字符都分配了一个唯一的数字编号</strong>，这个编号范围从 0x000000 到 0x10FFFF</p>
+<h2 id="第三章-逻辑学"><a href="#第三章-逻辑学" class="headerlink" title="第三章-逻辑学"></a>第三章-逻辑学</h2><h4 id="O-与或非运算"><a href="#O-与或非运算" class="headerlink" title="Ø 与或非运算"></a>Ø 与或非运算</h4><h4 id="O-布尔代数计算、真值表；"><a href="#O-布尔代数计算、真值表；" class="headerlink" title="Ø 布尔代数计算、真值表；"></a>Ø 布尔代数计算、真值表；</h4><p>参考文章:<a href="/2023/02/05/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97/" title="逻辑运算">逻辑运算</a></p>
+<h4 id="二极管与三极管特性"><a href="#二极管与三极管特性" class="headerlink" title="二极管与三极管特性:"></a>二极管与三极管特性:</h4><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302052030591.png" alt="image-20230205203010512" style="zoom:25%;" /><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302052030315.png" alt="image-20230205203059223" style="zoom:25%;" /></p>
+<h2 id="第四章：图灵机和冯诺依曼结构"><a href="#第四章：图灵机和冯诺依曼结构" class="headerlink" title="第四章：图灵机和冯诺依曼结构"></a>第四章：图灵机和冯诺依曼结构</h2><p>参考文章:<a href="/2023/02/05/%E5%9B%BE%E7%81%B5%E6%9C%BA%E4%B8%8E%E5%86%AF%E8%AF%BA%E4%BE%9D%E6%9B%BC%E7%BB%93%E6%9E%84/" title="图灵机与冯诺依曼结构">图灵机与冯诺依曼结构</a></p>
+<p> <strong>图灵机组成的三部分：1、带子</strong>，被分成许多方格，符号可以被写入其中或从中读出；<strong>2、可以移动的读写头</strong>，能从带子上读取符号或将符号写到带子上；<strong>3、指示读写头下一步如何做的一组规则。</strong></p>
+<p><strong>图灵机的运算(见上文的参考文章)</strong></p>
+<p><strong>冯诺依曼计算机的五大组成部分:</strong><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302052051983.png" alt="image-20230205205159856" style="zoom: 50%;" /></p>
+<p>2-4译码器00,01,10,11分别对应着从上往下的四条电线</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302060907448.png" alt="image-20230206090735329" style="zoom: 25%;" /><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302060908436.png" alt="image-20230206090805316" style="zoom: 25%;" /></p>
+<img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302060909489.png" alt="image-20230206090914366" style="zoom:50%;" />
+
+<h4 id="Ram和rom的定义以及特点"><a href="#Ram和rom的定义以及特点" class="headerlink" title="Ram和rom的定义以及特点"></a>Ram和rom的定义以及特点</h4><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302060912062.png" alt="image-20230206091227011" style="zoom: 50%;" />
+
+<img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302060912460.png" alt="image-20230206091237410" style="zoom:50%;" />
+
+<h2 id="第五-六章-算法建模与算法基础"><a href="#第五-六章-算法建模与算法基础" class="headerlink" title="第五,六章-算法建模与算法基础"></a>第五,六章-算法建模与算法基础</h2><p>参考文章:</p>
+<a href="/2023/02/05/%E8%AE%A1%E7%AE%97%E6%80%9D%E7%BB%B4-%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/" title="计算思维-算法基础">计算思维-算法基础</a>
+
+<a href="/2023/02/05/%E8%AE%A1%E7%AE%97%E6%80%9D%E7%BB%B4/" title="计算思维">计算思维</a>
+]]></content>
+      <categories>
+        <category>必修课</category>
+        <category>计算机导论</category>
+      </categories>
+      <tags>
+        <tag>-计算机导论</tag>
       </tags>
   </entry>
   <entry>
@@ -451,53 +1075,38 @@
       </tags>
   </entry>
   <entry>
-    <title>算数运算符的使用</title>
-    <url>/2017/05/26/%E7%AE%97%E6%95%B0%E8%BF%90%E7%AE%97%E7%AC%A6%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="算数运算符"><a href="#算数运算符" class="headerlink" title="算数运算符"></a>算数运算符</h2><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281553513.png" alt="image-20221012101401291"></p>
-<h3 id="符号运算的注意点"><a href="#符号运算的注意点" class="headerlink" title="符号运算的注意点"></a>符号运算的注意点</h3><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281553366.png" alt="image-20221012102808342"></p>
-<p>所以说提升运算与强制转换运算十分重要</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281553100.png" alt="image-20221012103238704">最终被模数的符号和去出来的余是一样的</p>
-<p>开发中经常用%来判断能否被整除<img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554441.png" alt="image-20221012103738982"><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554172.png" alt="image-20221012104035454"></p>
-<p>自增是在表明的变量上加1</p>
-<p>前自增先自增后赋值</p>
-<p>后自增先赋值后自增</p>
-<p>自增一不会改变自身变量的类型</p>
-<h2 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h2><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554391.png" alt="image-20221012111406124"><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554595.png" alt="image-20221012111541561"><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221012111653469.png" alt="image-20221012111653469"></p>
-<p>注意,这里的等号是赋值,+=可以理解为赋值＋2</p>
-<p>一样的还有-=   %=</p>
-<p>这种写法不会改变变量本身的数据类型</p>
-<p>用定义的话会自动提升</p>
-<p>比如</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">short s = <span class="number">10</span></span><br><span class="line">short a = s+<span class="number">1</span></span><br><span class="line"><span class="comment">//因为1是整形</span></span><br><span class="line"><span class="comment">//所以a会变成int值从而导致出错</span></span><br><span class="line">如果用++就没问题</span><br></pre></td></tr></table></figure>
-
-<h2 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h2><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554917.png" alt="image-20221012134612382"></p>
-<p>注意,输出的结果都是布尔类型</p>
-<p>注意=与==号的区别</p>
-<h2 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h2><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554936.png" alt="image-20221012140310668"></p>
-<h4 id="逻辑和短路的区别"><a href="#逻辑和短路的区别" class="headerlink" title="逻辑和短路的区别"></a>逻辑和短路的区别</h4><p>逻辑前后都会执行,而短路如果前面的条件已经判定不会执行了,那么后面的程序也不会执行了</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554730.png" alt="image-20221012192114465"></p>
-<p> <img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554716.png" alt="image-20221012192236261"></p>
-<pre><code>## 位运算符
-</code></pre>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554250.png" alt="image-20221012193101596"></p>
-<p> <img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554602.png" alt="image-20221012193045786"></p>
-<h4 id="这个用的比较少-为了加速学习这里不做详细说明-详情参考-day03-15"><a href="#这个用的比较少-为了加速学习这里不做详细说明-详情参考-day03-15" class="headerlink" title="这个用的比较少,为了加速学习这里不做详细说明,详情参考 day03  15"></a>这个用的比较少,为了加速学习这里不做详细说明,详情参考 day03  15</h4><h3 id="交换两个变量的值"><a href="#交换两个变量的值" class="headerlink" title="交换两个变量的值"></a>交换两个变量的值</h3><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554934.png" alt="image-20221012193955300"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554429.png" alt="image-20221012194006274"></p>
-<h2 id="三元运算符"><a href="#三元运算符" class="headerlink" title="三元运算符"></a>三元运算符</h2><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554853.png" alt="image-20221012194255682"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281554226.png" alt="image-20221014075825076"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281555850.png" alt="image-20221014075949565"></p>
-<p>不相同的类型可以统一为一个结果 ,表达式1和表达式2必须是一致的<img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281555129.png" alt="image-20221014080441296"></p>
-<p>凡是可以使用三元运算符的地方都可以使用if,else结构</p>
-<p>如果两种结构都可以使用,那么优先选择三元运算符,因为他简洁又高效</p>
-<h2 id="运算符的优先级"><a href="#运算符的优先级" class="headerlink" title="运算符的优先级"></a>运算符的优先级</h2><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202301281555129.png" alt="image-20221014081357625"></p>
-<p>看似复杂,实际使用中只要用好小括号就行</p>
+    <title>逻辑运算</title>
+    <url>/2023/02/05/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97/</url>
+    <content><![CDATA[<h2 id="逻辑非"><a href="#逻辑非" class="headerlink" title="逻辑非"></a>逻辑非</h2><p>A为真,那么!A或者A上加一横线</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947540.png" alt="image-20230205194723467"></p>
+<h2 id="逻辑与-都为真才为真"><a href="#逻辑与-都为真才为真" class="headerlink" title="逻辑与-都为真才为真"></a>逻辑与-都为真才为真</h2><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947497.png" alt="image-20221018135110409"></p>
+<h2 id="逻辑或-都为假才为假-这个或这个"><a href="#逻辑或-都为假才为假-这个或这个" class="headerlink" title="逻辑或-都为假才为假(这个或这个)"></a>逻辑或-都为假才为假(这个或这个)</h2><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947499.png" alt="image-20221018135412120"></p>
+<p>二有一或者二都有就是或</p>
+<h2 id="逻辑异或-一真一假才为真"><a href="#逻辑异或-一真一假才为真" class="headerlink" title="逻辑异或-一真一假才为真"></a>逻辑异或-一真一假才为真</h2><p>只能一真一假</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947500.png" alt="image-20221018135727079"></p>
+<p>异或的符号</p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947501.png" alt="image-20221018135755109"></p>
+<h2 id="这套理论的使用"><a href="#这套理论的使用" class="headerlink" title="这套理论的使用"></a>这套理论的使用</h2><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947502.png" alt="image-20221018141148058"></p>
+<h2 id="布尔代数与门电路"><a href="#布尔代数与门电路" class="headerlink" title="布尔代数与门电路"></a>布尔代数与门电路</h2><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947503.png" alt="image-20221018144020230"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947504.png" alt="image-20221018150959041"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947505.png" alt="image-20221018144736839"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947506.png" alt="image-20221018144758747"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947507.png" alt="image-20221018144814136"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947508.png" alt="image-20221018144823845"><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947509.png" alt="image-20221018144829472"></p>
+<h2 id="逻辑电路"><a href="#逻辑电路" class="headerlink" title="逻辑电路"></a>逻辑电路</h2><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947510.png" alt="image-20221018152913475"><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947511.png" alt="image-20221018152919287"><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947512.png" alt="image-20221018152925369"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947513.png" alt="image-20221018152933126"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947514.png" alt="image-20221018152939671"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947515.png" alt="image-20221025145431257"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947516.png" alt="image-20221025145844113"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947517.png" alt="image-20221025145850682"></p>
+<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947518.png" alt="image-20221025145855848"></p>
 ]]></content>
       <categories>
-        <category>java</category>
-        <category>java基础</category>
+        <category>必修课</category>
+        <category>计算机导论</category>
       </categories>
       <tags>
-        <tag>java</tag>
+        <tag>-计算机导论</tag>
       </tags>
   </entry>
   <entry>
@@ -557,633 +1166,24 @@
       </tags>
   </entry>
   <entry>
-    <title>关键字与保留字</title>
-    <url>/2016/05/26/%E5%85%B3%E9%94%AE%E5%AD%97%E4%B8%8E%E4%BF%9D%E7%95%99%E5%AD%97/</url>
-    <content><![CDATA[<h2 id="关键字与保留字"><a href="#关键字与保留字" class="headerlink" title="关键字与保留字"></a>关键字与保留字</h2><p>定义：被Java语言赋予特殊含义，用作专门用途的字符串（单词）</p>
-<p>特点：关键字中所有字幕都为小写</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041633236.png" alt="image-20230204163315062"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041634382.png" alt="image-20230204163406278"></p>
-<p>灰色不算关键字但是能当关键字</p>
-<p>保留字：未来可能用，使用时要避开</p>
+    <title>hexo介绍</title>
+    <url>/2017/05/26/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
       <categories>
-        <category>java</category>
-        <category>java基础</category>
+        <category>本站の有趣☞言论</category>
       </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>标识符与命名规范</title>
-    <url>/2016/05/26/%E5%8F%98%E9%87%8F/</url>
-    <content><![CDATA[<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><p><strong>变量的概念：申请内存中的一个区域</strong></p>
-<p>​           该区域的数据可以在同一类型范围内不断变化</p>
-<p>​           变量是最基本的储存类型，包含变量名，变量类型和储存的值</p>
-<p><strong>变量用于在内存中保存数据</strong>  </p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041645262.png" alt="image-20230204164500193"></p>
-<p><strong>变量类型：整形，字符型浮点型</strong></p>
-<p>定义变量的格式 数据类型 变量名 = 变量值</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041645091.png" alt="image-20230204164521034"></p>
-<p>程序的读取顺序从上到下，先print后定义变量就不行</p>
-<p>一个大括号就是一个作用域，出了作用域之后变量不生效</p>
-<p><strong>同一个作用域内，不可以声明同名的两个变量</strong></p>
-<p>逆向思维，反证法，你不知道这个东西行不行，你就假设他行，然后去试试看(好低级的话)</p>
-]]></content>
-      <categories>
-        <category>java</category>
-        <category>java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>标识符与命名规范</title>
-    <url>/2016/05/26/%E5%8F%98%E9%87%8F%E7%9A%84%E5%88%86%E7%B1%BB/</url>
-    <content><![CDATA[<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041651934.png" alt="image-20230204165140864"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041651397.png" alt="image-20230204165146327"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041653542.png" alt="image-20230204165337404"></p>
-<p>float的范围比long还大，并且定义的数值后面要加F或f</p>
-<p>定义char（字符型）变量通常使用单引号</p>
-<p>char只能使用一个字符（等于两个字节）</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041654943.png" alt="image-20230204165401862"></p>
-<p>boolean变量 变量值只能取true或false,默认是false</p>
-<p>常常在条件判断与循环中使用</p>
-<p>tips:\n前面加.变为\n.就不再表示了,\的作用相当于转义.,\后的特殊符号不在表达含义</p>
-<p><strong>String</strong></p>
-<p>string不属于基本数据类型,他是引用数据类型</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041654630.png" alt="image-20230204165431567"></p>
-]]></content>
-      <categories>
-        <category>java</category>
-        <category>java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>java学习流程概览</title>
-    <url>/2016/05/26/java%E5%AD%A6%E4%B9%A0%E6%B5%81%E7%A8%8B%E6%A6%82%E8%A7%88/</url>
-    <content><![CDATA[<h2 id="java学习流程概览"><a href="#java学习流程概览" class="headerlink" title="java学习流程概览"></a>java学习流程概览</h2><p>\n换行符，加在字符串内</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041638828.png" alt="image-20230204163843654"></p>
-]]></content>
-      <categories>
-        <category>java</category>
-        <category>java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>标识符与命名规范</title>
-    <url>/2016/05/26/%E5%8F%98%E9%87%8F%E8%BF%90%E7%AE%97%E8%A7%84%E5%88%99/</url>
-    <content><![CDATA[<h2 id="变量运算规则"><a href="#变量运算规则" class="headerlink" title="变量运算规则"></a>变量运算规则</h2><p>long l = 1323,此时没有后加L,但是仍然可以编译,是因为实际上把1323int型赋给了long型</p>
-<p>如果后面的值超过了int的值,就会出问题<img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041647873.png" alt="image-20230204164707790"></p>
-]]></content>
-      <categories>
-        <category>java</category>
-        <category>java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>标识符与命名规范</title>
-    <url>/2016/05/26/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BF%90%E7%AE%97%E8%A7%84%E5%88%99/</url>
-    <content><![CDATA[<h2 id="基本数据类型之间的运算规则"><a href="#基本数据类型之间的运算规则" class="headerlink" title="基本数据类型之间的运算规则"></a>基本数据类型之间的运算规则</h2><p>1.自动类型提升<img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041655758.png" alt="image-20230204165521721"></p>
-<p>定义的结果变量的范围要大过数值否则就会丢失</p>
-<p>整型和浮点型也可以,只要数值在范围内即可</p>
-<p>低级往高级做运算应该往高级上去靠,并且整形的范围比浮点型的小 </p>
-<p>所以结论</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041655706.png" alt="image-20230204165529655"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041655612.png" alt="image-20230204165533567"></p>
-<p>char变量和容量小的变量做运算则比较特殊</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041655841.png" alt="image-20230204165541775"></p>
-<p>强制类型转换运算,是自动类型提升的逆运算</p>
-<p>在被重定义的数值前加()强转符</p>
-<p>损失的小数点称为截断操作</p>
-<p><img src="C:/Users/19086/AppData/Roaming/Typora/typora-user-images/image-20230204165556547.png" alt="image-20230204165556547"></p>
-]]></content>
-      <categories>
-        <category>java</category>
-        <category>java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>标识符与命名规范</title>
-    <url>/2016/05/26/%E5%B8%B8%E7%94%A8%E7%9A%84dos%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h2 id="常用的dos命令"><a href="#常用的dos命令" class="headerlink" title="常用的dos命令"></a>常用的dos命令</h2><p>dir： 列出当前目录下的文件以及文件夹</p>
-<p>md：创建目录</p>
-<p>rd：删除目录</p>
-<p>cd：进入指定目录</p>
-<p>cd..:退回到上一级目录</p>
-<p>cd:退回到根目录</p>
-<p>del：删除文件</p>
-<p>exit：推出dos命令</p>
-<p> 补充：echo javase&gt;1.doc     echo 内容&gt;（&gt;代表到）文件名.doc</p>
-<p>批量删除同类型文件文件名用*号，如del *.doc</p>
-<p>del选择文件夹删除的是文件夹中的文件</p>
-<p>左右键移动光标</p>
-<p>上下键</p>
-]]></content>
-      <categories>
-        <category>java</category>
-        <category>java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>标识符与命名规范</title>
-    <url>/2016/05/26/%E6%A0%87%E8%AF%86%E7%AC%A6%E4%B8%8E%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83--%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/</url>
-    <content><![CDATA[<h2 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h2><p>可以起名字的地方都叫标识符</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041641794.png" alt="image-20230204164138728"></p>
-<h2 id="命名规范"><a href="#命名规范" class="headerlink" title="命名规范"></a>命名规范</h2><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302041642126.png" alt="image-20230204164209044"></p>
-<p>java设置名字要见名知意，不要自己搞自己</p>
-]]></content>
-      <categories>
-        <category>java</category>
-        <category>java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>java学习流程概览</title>
-    <url>/2016/05/26/%E6%B3%A8%E9%87%8A/</url>
-    <content><![CDATA[<h2 id="注释的规范"><a href="#注释的规范" class="headerlink" title="注释的规范"></a>注释的规范</h2><p>//单行注释：如下的语句表示输出到控制台xxxxxxxxxxxx</p>
-<p>//后的内容读代码不会读</p>
-<p>多行注释</p>
-<p>/*多行注释：xxxxxxxxxxxxxx</p>
-<p>xxxxxxxxx*/</p>
-<p>注释用来解释说明代码，方便你自己，以免你自己不懂</p>
-<p>注释可能出错的代码，然后运行，发现不报错那就是注释的地方错了，方便你排查</p>
-<p>生成的字节码文件不包含注释的信息</p>
-<p>文档注释/** */</p>
-<p>启用方法</p>
-<p>javadoc -d 创立的文件名 -author -version xxx.java(你所写的类） 编译出来的html只能够提取文档注释，文档注释中</p>
-<p>@author xxxxxx</p>
-<p>@version xxxxxxx</p>
-<p>注意：多行注释不可以嵌套使用</p>
-]]></content>
-      <categories>
-        <category>java</category>
-        <category>java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo创建文件自动打开</title>
-    <url>/2023/02/04/hexo%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E8%87%AA%E5%8A%A8%E6%89%93%E5%BC%80/</url>
-    <content><![CDATA[<h2 id="如何在hexo创建新post文档之后自动打开"><a href="#如何在hexo创建新post文档之后自动打开" class="headerlink" title="如何在hexo创建新post文档之后自动打开"></a>如何在hexo创建新post文档之后自动打开</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo n &quot;The title of your blog&quot;</span><br></pre></td></tr></table></figure>
-
-<p>这个指令可以快速创建</p>
-<h3 id="实现创建后自动打开"><a href="#实现创建后自动打开" class="headerlink" title="实现创建后自动打开"></a>实现创建后自动打开</h3><ol>
-<li><p>新建<code>scripts</code>目录（hexo根目录）</p>
-</li>
-<li><p>创建<code>auto_open.js</code>文件,如下</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">var spawn = require(&#x27;child_process&#x27;).exec;</span><br><span class="line">hexo.on(&#x27;new&#x27;, function(data)&#123;</span><br><span class="line">  spawn(&#x27;start  &quot;C:\Program Files\Typora\Typora.exe&quot; &#x27; + data.path);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>路径设置为你的软件路径即可</p>
-]]></content>
-      <categories>
-        <category>科技分享给</category>
-      </categories>
-      <tags>
-        <tag>黑科技</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>js编程练习之变化的背景</title>
-    <url>/2023/02/04/js%E7%BC%96%E7%A8%8B%E7%BB%83%E4%B9%A0%E4%B9%8B%E5%8F%98%E5%8C%96%E7%9A%84%E8%83%8C%E6%99%AF/</url>
-    <content><![CDATA[<img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302042100009.png" alt="image-20230204210016349" style="zoom: 33%;" />
-
-]]></content>
-      <categories>
-        <category>js基础</category>
-        <category>js练习</category>
-      </categories>
-      <tags>
-        <tag>js</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算机导论大一上复习计划大纲</title>
-    <url>/2023/02/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AF%BC%E8%AE%BA%E5%A4%A7%E4%B8%80%E4%B8%8A%E5%A4%8D%E4%B9%A0%E8%AE%A1%E5%88%92%E5%A4%A7%E7%BA%B2/</url>
-    <content><![CDATA[<h2 id="第一章-认识计算机"><a href="#第一章-认识计算机" class="headerlink" title="第一章-认识计算机"></a>第一章-认识计算机</h2><h4 id="O-计算、计算机、计算思维的定义和区别"><a href="#O-计算、计算机、计算思维的定义和区别" class="headerlink" title="Ø 计算、计算机、计算思维的定义和区别"></a>Ø 计算、计算机、计算思维的定义和区别</h4><p><strong>计算</strong></p>
-<p>计算是一种将[单一或多个的输入值]转换为[单一或多个结果]的思考过程</p>
-<p><strong>自动计算要解决的几个问题:表示-存储-执行</strong></p>
-<p>“数据”的表示</p>
-<p>“计算规则”的表示:程序</p>
-<p>数据与计算规则的“自动存储”计算规则的“自动执行”</p>
-<p><strong>计算思维要素</strong></p>
-<p><strong>分解</strong>:把数据,过程或问题分解为更小的,更易于管理的部分</p>
-<p><strong>模式识别</strong>:观察数据的模式、趋势和规律。</p>
-<p><strong>抽象</strong>:识别模式形成背后的一般原理。</p>
-<p><strong>算法设计</strong>:为解决某一类问题撰写一系列详细步骤。</p>
-<h4 id="O-第一部通用电子计算机、第一个微处理器"><a href="#O-第一部通用电子计算机、第一个微处理器" class="headerlink" title="Ø 第一部通用电子计算机、第一个微处理器"></a>Ø 第一部通用电子计算机、第一个微处理器</h4><p>第一部通用电子计算机:<em><strong>ENIAC</strong></em></p>
-<p>第一个微处理器:<strong>INTEL4004</strong></p>
-<h4 id="计算机的发展（计算机发展的四个阶段）"><a href="#计算机的发展（计算机发展的四个阶段）" class="headerlink" title="计算机的发展（计算机发展的四个阶段）"></a>计算机的发展（计算机发展的四个阶段）</h4><ul>
-<li>第一代计算机（1946-1957年）–电子管时代</li>
-<li>第二代计算机（1958-1964年）–晶体管时代</li>
-<li>第三代计算机（1965-1971年）–中小规模集成电路时代</li>
-<li>第四代计算机（1972年至今）–超大规模集成电路时代。</li>
-</ul>
-<hr>
-<h2 id="第二章：进制表示与信息编码"><a href="#第二章：进制表示与信息编码" class="headerlink" title="第二章：进制表示与信息编码"></a>第二章：进制表示与信息编码</h2><h4 id="进制的转换"><a href="#进制的转换" class="headerlink" title="进制的转换"></a>进制的转换</h4><p><strong>参考文章</strong>:<a href="/2023/02/05/%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/" title="进制的转换">进制的转换</a></p>
-<h4 id="O-原码、反码、补码的计算"><a href="#O-原码、反码、补码的计算" class="headerlink" title="Ø 原码、反码、补码的计算"></a>Ø 原码、反码、补码的计算</h4><p><strong>参考文章</strong>:<a href="/2023/02/05/%E5%82%A8%E5%AD%98%E8%AE%A1%E9%87%8F%E5%8D%95%E4%BD%8D%E4%B8%8E%E6%95%B0%E5%AD%97%E5%AD%98%E5%82%A8%E6%96%B9%E5%BC%8F/" title="储存计量单位与数字存储方式">储存计量单位与数字存储方式</a></p>
-<h4 id="O-浮点数SeM的表示"><a href="#O-浮点数SeM的表示" class="headerlink" title="Ø 浮点数SeM的表示"></a>Ø 浮点数SeM的表示</h4><p>这个东西各种原因这里不做说明,详情请看第二章第69页的ppt,不过不建议看</p>
-<h4 id="O-ASCII码、国标码、Unicode码的定义"><a href="#O-ASCII码、国标码、Unicode码的定义" class="headerlink" title="Ø ASCII码、国标码、Unicode码的定义"></a>Ø ASCII码、国标码、Unicode码的定义</h4><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051936546.png" alt="image-20230205193615446" style="zoom:25%;" /><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051937493.png" alt="image-20230205193740403" style="zoom:25%;" /></p>
-<p><strong>国标码</strong>:注意,一个汉字由两个字节表示(一个字节8个bit)</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051940616.png" alt="image-20230205194041565"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051940884.png" alt="image-20230205194056832"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051941305.png" alt="image-20230205194112260"></p>
-<p><strong>unicode</strong>:<strong>Unicode为世界上所有字符都分配了一个唯一的数字编号</strong>，这个编号范围从 0x000000 到 0x10FFFF</p>
-<h2 id="第三章-逻辑学"><a href="#第三章-逻辑学" class="headerlink" title="第三章-逻辑学"></a>第三章-逻辑学</h2><h4 id="O-与或非运算"><a href="#O-与或非运算" class="headerlink" title="Ø 与或非运算"></a>Ø 与或非运算</h4><h4 id="O-布尔代数计算、真值表；"><a href="#O-布尔代数计算、真值表；" class="headerlink" title="Ø 布尔代数计算、真值表；"></a>Ø 布尔代数计算、真值表；</h4><p>参考文章:<a href="/2023/02/05/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97/" title="逻辑运算">逻辑运算</a></p>
-<h4 id="二极管与三极管特性"><a href="#二极管与三极管特性" class="headerlink" title="二极管与三极管特性:"></a>二极管与三极管特性:</h4><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302052030591.png" alt="image-20230205203010512" style="zoom:25%;" /><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302052030315.png" alt="image-20230205203059223" style="zoom:25%;" /></p>
-<h2 id="第四章：图灵机和冯诺依曼结构"><a href="#第四章：图灵机和冯诺依曼结构" class="headerlink" title="第四章：图灵机和冯诺依曼结构"></a>第四章：图灵机和冯诺依曼结构</h2><p>参考文章:<a href="/2023/02/05/%E5%9B%BE%E7%81%B5%E6%9C%BA%E4%B8%8E%E5%86%AF%E8%AF%BA%E4%BE%9D%E6%9B%BC%E7%BB%93%E6%9E%84/" title="图灵机与冯诺依曼结构">图灵机与冯诺依曼结构</a></p>
-<p> <strong>图灵机组成的三部分：1、带子</strong>，被分成许多方格，符号可以被写入其中或从中读出；<strong>2、可以移动的读写头</strong>，能从带子上读取符号或将符号写到带子上；<strong>3、指示读写头下一步如何做的一组规则。</strong></p>
-<p><strong>图灵机的运算(见上文的参考文章)</strong></p>
-<p><strong>冯诺依曼计算机的五大组成部分:</strong><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302052051983.png" alt="image-20230205205159856" style="zoom: 50%;" /></p>
-<p>2-4译码器00,01,10,11分别对应着从上往下的四条电线</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302060907448.png" alt="image-20230206090735329" style="zoom: 25%;" /><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302060908436.png" alt="image-20230206090805316" style="zoom: 25%;" /></p>
-<img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302060909489.png" alt="image-20230206090914366" style="zoom:50%;" />
-
-<h4 id="Ram和rom的定义以及特点"><a href="#Ram和rom的定义以及特点" class="headerlink" title="Ram和rom的定义以及特点"></a>Ram和rom的定义以及特点</h4><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302060912062.png" alt="image-20230206091227011" style="zoom: 50%;" />
-
-<img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302060912460.png" alt="image-20230206091237410" style="zoom:50%;" />
-
-<h2 id="第五-六章-算法建模与算法基础"><a href="#第五-六章-算法建模与算法基础" class="headerlink" title="第五,六章-算法建模与算法基础"></a>第五,六章-算法建模与算法基础</h2><p>参考文章:</p>
-<a href="/2023/02/05/%E8%AE%A1%E7%AE%97%E6%80%9D%E7%BB%B4-%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/" title="计算思维-算法基础">计算思维-算法基础</a>
-
-<a href="/2023/02/05/%E8%AE%A1%E7%AE%97%E6%80%9D%E7%BB%B4/" title="计算思维">计算思维</a>
-]]></content>
-      <categories>
-        <category>必修课</category>
-        <category>计算机导论</category>
-      </categories>
-      <tags>
-        <tag>-计算机导论</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>进制的转换</title>
-    <url>/2023/02/05/%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/</url>
-    <content><![CDATA[<h2 id="进制的转换"><a href="#进制的转换" class="headerlink" title="进制的转换"></a>进制的转换</h2><h3 id="各种进制转10"><a href="#各种进制转10" class="headerlink" title="各种进制转10"></a>各种进制转10</h3><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303051.png" alt="image-20221009191357718"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303052.png" alt="image-20221009191440495"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303053.png" alt="image-20221009191521203"></p>
-<h3 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h3><p>个位上是0,然后向左递增或向右递减</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303054.png" alt="image-20221009191944636"></p>
-<p><strong>以个位为0,为中心轴,向左侧递增,向右侧递减</strong></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303056.png" alt="image-20221009192318681"></p>
-<p>其他进制的转10进制以此类推</p>
-<h2 id="10进制转换为其他进制"><a href="#10进制转换为其他进制" class="headerlink" title="10进制转换为其他进制"></a>10进制转换为其他进制</h2><p><strong>整数部分为除,小数部分为乘,读取方向为数轴方向,整数↑,小数↓</strong></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303057.png" alt="image-20221009192502724"></p>
-<p>从下往上读取.</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303058.png" alt="image-20221009192639409"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303059.png" alt="image-20221009193112096"></p>
-<p>只要记住是反过来的就行</p>
-<h3 id="快速方法-高进制转2"><a href="#快速方法-高进制转2" class="headerlink" title="快速方法(高进制转2)"></a>快速方法(高进制转2)</h3><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303060.png" alt="image-20221009193250110"></p>
-<p>一变几就看是2的几次方,并且如果是首位或者末尾是0的话就省略掉</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303062.png" alt="image-20221009193536174"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051303063.png" alt="image-20221009193709308"></p>
-<h3 id="二进制转高的话就从小数点位置开始划分"><a href="#二进制转高的话就从小数点位置开始划分" class="headerlink" title="二进制转高的话就从小数点位置开始划分"></a>二进制转高的话就从小数点位置开始划分</h3><p>每一个被划分出来的单元都是独立的</p>
-<p>如果是16转8的话就用2来做媒介,很快</p>
-<h4 id="并且将划分出来的数组用二进制转换法转换成数字"><a href="#并且将划分出来的数组用二进制转换法转换成数字" class="headerlink" title="并且将划分出来的数组用二进制转换法转换成数字"></a>并且将划分出来的数组用二进制转换法转换成数字</h4><p> H下标表示16进制</p>
-<p>B是二进制 O是八进制</p>
-<p>D是10进制</p>
-]]></content>
-      <categories>
-        <category>必修课</category>
-        <category>计算机导论</category>
-      </categories>
-      <tags>
-        <tag>-计算机导论</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>储存计量单位与数字存储方式</title>
-    <url>/2023/02/05/%E5%82%A8%E5%AD%98%E8%AE%A1%E9%87%8F%E5%8D%95%E4%BD%8D%E4%B8%8E%E6%95%B0%E5%AD%97%E5%AD%98%E5%82%A8%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051914419.png" alt="image-20221011135058964"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051914421.png" alt="image-20221011135348635"></p>
-<p>一个字节8位</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051914422.png" alt="image-20221011145133435"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051914423.png" alt="image-20221011145148312"><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051914424.png" alt="image-20221011145326002"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051914425.png" alt="image-20221011145440945">![image-20221011145442802](C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221011145442802.png</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051914426.png" alt="image-20221011145804543"><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051914427.png" alt="image-20221011150007809"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051914428.png" alt="image-20221011150506260"><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051914429.png" alt="image-20221011150513085"></p>
-<h3 id="乘法与除法和日常计算逻辑一样"><a href="#乘法与除法和日常计算逻辑一样" class="headerlink" title="乘法与除法和日常计算逻辑一样"></a>乘法与除法和日常计算逻辑一样</h3><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051927681.png" alt="image-20230205192730603"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051928775.png" alt="image-20230205192851689"></p>
-]]></content>
-      <categories>
-        <category>必修课</category>
-        <category>计算机导论</category>
-      </categories>
-      <tags>
-        <tag>-计算机导论</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算思维-算法基础</title>
-    <url>/2023/02/05/%E8%AE%A1%E7%AE%97%E6%80%9D%E7%BB%B4-%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/</url>
-    <content><![CDATA[<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017405.png" alt="image-20221108133720384"></p>
-<h3 id="算法的基本特征"><a href="#算法的基本特征" class="headerlink" title="算法的基本特征"></a>算法的基本特征</h3><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017406.png" alt="image-20221108133952706"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017407.png" alt="image-20221108134138624"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017408.png" alt="image-20221108134230268"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017409.png" alt="image-20221108134427011"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017410.png" alt="image-20221108134542010"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017411.png" alt="image-20221108135442184"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017412.png" alt="image-20221108140337883"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017413.png" alt="image-20221108140750921"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017414.png" alt="image-20221108141501966"><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017415.png" alt="image-20221108142313953"></p>
-<p><strong>冒泡算法</strong></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017416.png" alt="image-20221108145442658"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017417.png" alt="image-20221108145629290"></p>
-<p>插空算法</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017418.png" alt="image-20221108150700648"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017419.png" alt="image-20221108154926039"></p>
-<p>二分查找法</p>
-<p>具体见第六章55页</p>
-]]></content>
-      <categories>
-        <category>必修课</category>
-        <category>计算机导论</category>
-      </categories>
-      <tags>
-        <tag>-计算机导论</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>图灵机与冯诺依曼结构</title>
-    <url>/2023/02/05/%E5%9B%BE%E7%81%B5%E6%9C%BA%E4%B8%8E%E5%86%AF%E8%AF%BA%E4%BE%9D%E6%9B%BC%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<h2 id="图灵机模型"><a href="#图灵机模型" class="headerlink" title="图灵机模型"></a>图灵机模型</h2><p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025134944918.png" alt="image-20221025134944918"></p>
-<p>改为数字是指指针把当前纸袋数字改写</p>
-<p>本图的程序将连续的1之后的0修改为1</p>
-<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025140315220.png" alt="image-20221025140315220"></p>
-<p>这是表示图</p>
-<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025140544377.png" alt="image-20221025140544377"></p>
-<p>这是作业</p>
-<p>b是空格,H是停止</p>
-<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025140742764.png" alt="image-20221025140742764"></p>
-<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025142851890.png" alt="image-20221025142851890"></p>
-<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025143202427.png" alt="image-20221025143202427"></p>
-<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025143514451.png" alt="image-20221025143514451"></p>
-<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025155841187.png" alt="image-20221025155841187"></p>
-<p>这个图就是哪边底下有东西哪边就是1</p>
-<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025145844113.png" alt="image-20221025145844113"></p>
-<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025145850682.png" alt="image-20221025145850682"></p>
-<p><img src="C:\Users\ECHO\AppData\Roaming\Typora\typora-user-images\image-20221025145855848.png" alt="image-20221025145855848"></p>
-]]></content>
-      <categories>
-        <category>必修课</category>
-        <category>计算机导论</category>
-      </categories>
-      <tags>
-        <tag>-计算机导论</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>逻辑运算</title>
-    <url>/2023/02/05/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97/</url>
-    <content><![CDATA[<h2 id="逻辑非"><a href="#逻辑非" class="headerlink" title="逻辑非"></a>逻辑非</h2><p>A为真,那么!A或者A上加一横线</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947540.png" alt="image-20230205194723467"></p>
-<h2 id="逻辑与-都为真才为真"><a href="#逻辑与-都为真才为真" class="headerlink" title="逻辑与-都为真才为真"></a>逻辑与-都为真才为真</h2><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947497.png" alt="image-20221018135110409"></p>
-<h2 id="逻辑或-都为假才为假-这个或这个"><a href="#逻辑或-都为假才为假-这个或这个" class="headerlink" title="逻辑或-都为假才为假(这个或这个)"></a>逻辑或-都为假才为假(这个或这个)</h2><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947499.png" alt="image-20221018135412120"></p>
-<p>二有一或者二都有就是或</p>
-<h2 id="逻辑异或-一真一假才为真"><a href="#逻辑异或-一真一假才为真" class="headerlink" title="逻辑异或-一真一假才为真"></a>逻辑异或-一真一假才为真</h2><p>只能一真一假</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947500.png" alt="image-20221018135727079"></p>
-<p>异或的符号</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947501.png" alt="image-20221018135755109"></p>
-<h2 id="这套理论的使用"><a href="#这套理论的使用" class="headerlink" title="这套理论的使用"></a>这套理论的使用</h2><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947502.png" alt="image-20221018141148058"></p>
-<h2 id="布尔代数与门电路"><a href="#布尔代数与门电路" class="headerlink" title="布尔代数与门电路"></a>布尔代数与门电路</h2><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947503.png" alt="image-20221018144020230"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947504.png" alt="image-20221018150959041"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947505.png" alt="image-20221018144736839"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947506.png" alt="image-20221018144758747"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947507.png" alt="image-20221018144814136"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947508.png" alt="image-20221018144823845"><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947509.png" alt="image-20221018144829472"></p>
-<h2 id="逻辑电路"><a href="#逻辑电路" class="headerlink" title="逻辑电路"></a>逻辑电路</h2><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947510.png" alt="image-20221018152913475"><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947511.png" alt="image-20221018152919287"><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947512.png" alt="image-20221018152925369"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947513.png" alt="image-20221018152933126"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947514.png" alt="image-20221018152939671"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947515.png" alt="image-20221025145431257"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947516.png" alt="image-20221025145844113"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947517.png" alt="image-20221025145850682"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302051947518.png" alt="image-20221025145855848"></p>
-]]></content>
-      <categories>
-        <category>必修课</category>
-        <category>计算机导论</category>
-      </categories>
-      <tags>
-        <tag>-计算机导论</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算思维</title>
-    <url>/2023/02/05/%E8%AE%A1%E7%AE%97%E6%80%9D%E7%BB%B4/</url>
-    <content><![CDATA[<h2 id="计算思维"><a href="#计算思维" class="headerlink" title="计算思维"></a>计算思维</h2><p>将现实的问题模型化</p>
-<ul>
-<li>枚举法</li>
-<li>贪心法  DIJkstra(必考)</li>
-</ul>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017087.png" alt="image-20221101151748686"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017088.png" alt="image-20221101155527053"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017089.png" alt="image-20221101155555035"></p>
-<p>一旦该点被标记,就不再计算</p>
-<p>如果是相同的节点(1,2,3$1,2,4,3),要做比大小</p>
-<ul>
-<li><p>分治法</p>
-</li>
-<li><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302061017090.png" alt="image-20221101183847280"></p>
-</li>
-<li><p>动态规划法</p>
-</li>
-</ul>
-<p><a href="https://zhuanlan.zhihu.com/p/28594231">汉诺塔怎么玩？这可能是最简单的方法了 - 知乎 (zhihu.com)</a></p>
-]]></content>
-      <categories>
-        <category>必修课</category>
-        <category>计算机导论</category>
-      </categories>
-      <tags>
-        <tag>-计算机导论</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>大一第一学期数据库期末复习大纲</title>
-    <url>/2023/02/06/%E5%A4%A7%E4%B8%80%E7%AC%AC%E4%B8%80%E5%AD%A6%E6%9C%9F%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E5%A4%A7%E7%BA%B2/</url>
-    <content><![CDATA[<h2 id="数据模型与概念模型"><a href="#数据模型与概念模型" class="headerlink" title="数据模型与概念模型"></a>数据模型与概念模型</h2><p>信息世界通过概念模型进行描述,而计算机世界则是通过数据模型进行描述</p>
-<p><strong>概念模型相关的概念:</strong></p>
-<p>对象:类似与java中的类</p>
-<p>实例:实体</p>
-<p>属性:实体某一方面特征的抽象展示</p>
-<p>码,主码,次码:唯一标识一个实体的属性或者属性组,不能唯一标识的为次码</p>
-<p>实体集之间的联系:</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302062200686.png" alt="image-20230206220046334"></p>
-<p>数字的标法即为从箭头的根部来标,数字为这个箭头根部的对应关系,如<strong>教师n→学校</strong></p>
-<h4 id="E-R图"><a href="#E-R图" class="headerlink" title="E-R图"></a>E-R图</h4><p>长方形写实体集,圆形为属性,菱形为联系</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302062209080.png" alt="image-20230206220925012"></p>
-<p><strong>er转化为关系模型</strong></p>
-<img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071004965.png" alt="image-20230207100443658" style="zoom:50%;" />
-
-<p>以本图为例</p>
-<p>合并到实体时,保留自身的属性,添加关系的码和另一个实体的码(问题就在于这个关系的码,回头得弄明白)</p>
-<p>合并到关系时,保留自身的属性,添加左右两个实体的码,并且将两个码合并,作为自身的码</p>
-<p>合并写法</p>
-<p>使用(方法,<u>姓名,卡号</u>)(也就是把码用横线标出)</p>
-<p>学生(<u>姓名</u>,班级,卡号…………)</p>
-<h2 id="数据库代码部分"><a href="#数据库代码部分" class="headerlink" title="数据库代码部分"></a>数据库代码部分</h2><h4 id="查看当前所有数据库"><a href="#查看当前所有数据库" class="headerlink" title="查看当前所有数据库"></a>查看当前所有数据库</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">show databases;</span><br></pre></td></tr></table></figure>
-
-<h4 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create database 数据库名;</span><br></pre></td></tr></table></figure>
-
-<h4 id="切换字符集"><a href="#切换字符集" class="headerlink" title="切换字符集"></a>切换字符集</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">alter database 数据库名 character set 字符集名</span><br></pre></td></tr></table></figure>
-
-<h4 id="创建基本表"><a href="#创建基本表" class="headerlink" title="创建基本表"></a>创建基本表</h4><p>表结构就是定义一个表的字段、类型、主键、外键、索引</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create table 表名(</span><br><span class="line"></span><br><span class="line">列名 数据类型  约束条件,</span><br><span class="line"></span><br><span class="line">列名 数据类型  约束条件,</span><br><span class="line"></span><br><span class="line">);</span><br><span class="line">约束条件有 PRIMARY KEY设置主键</span><br><span class="line">NOT NULL 非空(不设置这个留空为null,设置了之后不可留空)</span><br><span class="line">unique数据不重复</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071023375.png" alt="image-20230207102312335"></p>
-<p>unsigned标识只能为0-255的整数,default指定默认值</p>
-<h4 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">drop database 数据库名;</span><br></pre></td></tr></table></figure>
-
-<h4 id="设置字段默认值"><a href="#设置字段默认值" class="headerlink" title="设置字段默认值"></a>设置字段默认值</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ALTER TABLE 表名 ALTER 字段名 SET DEFAULT 默认值;</span><br></pre></td></tr></table></figure>
-
-<h4 id="修改字段的条件与属性"><a href="#修改字段的条件与属性" class="headerlink" title="修改字段的条件与属性"></a>修改字段的条件与属性</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">alter table 数据库名 modify 字段名 数据类型 约束条件;</span><br></pre></td></tr></table></figure>
-
-<h4 id="插入数值语句"><a href="#插入数值语句" class="headerlink" title="插入数值语句"></a>插入数值语句</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">第一种：INSERT INTO 表名 (column1, column2, column3, ...)</span><br><span class="line">VALUES (value1, value2, value3, ...);</span><br><span class="line"></span><br><span class="line">第二种：INSERT INTO 表名</span><br><span class="line">VALUES (value1, value2, value3, ...);</span><br></pre></td></tr></table></figure>
-
-<h4 id="删除与增加主键"><a href="#删除与增加主键" class="headerlink" title="删除与增加主键"></a>删除与增加主键</h4><p>注意,主键不为空,不重复</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">alter table 表名 drop primary key;</span><br><span class="line"></span><br><span class="line">alter table 表名 add primary key(字段,字段...);</span><br></pre></td></tr></table></figure>
-
-<h4 id="自动增长"><a href="#自动增长" class="headerlink" title="自动增长"></a>自动增长</h4><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071055996.png" alt="image-20230207105549891"></p>
-<p>约束条件auto_increment</p>
-<p>注意一下图片里的这个语句</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071058245.png" alt="image-20230207105829182"></p>
-<p>自增的值可以自定义</p>
-<h4 id="展示表结构"><a href="#展示表结构" class="headerlink" title="展示表结构"></a>展示表结构</h4><p>desc 表名;<img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071100360.png" alt="image-20230207110033297"></p>
-<h4 id="改表名-字段名-字段类型"><a href="#改表名-字段名-字段类型" class="headerlink" title="改表名,字段名,字段类型"></a>改表名,字段名,字段类型</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">alter table 表名1 rename to 表名2;(改表名)</span><br><span class="line"></span><br><span class="line">alter table 表名 change 字段名1 字段名2 数值类型;</span><br></pre></td></tr></table></figure>
-
-<h4 id="添加-删除字段"><a href="#添加-删除字段" class="headerlink" title="添加,删除字段"></a>添加,删除字段</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">alter table 表名 add 字段名 数据类型;</span><br><span class="line">alter table 表名 drop 字段名;</span><br></pre></td></tr></table></figure>
-
-<h4 id="删除表"><a href="#删除表" class="headerlink" title="删除表"></a>删除表</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">drop table 表名; 完全删除</span><br><span class="line"></span><br><span class="line">delete from 表名; 只删除数据</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h4 id="批量修改表中数据"><a href="#批量修改表中数据" class="headerlink" title="批量修改表中数据"></a>批量修改表中数据</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">update 表名 set 字段名=表达式,字段名=表达式....;</span><br></pre></td></tr></table></figure>
-
-<p>示例:<img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071435609.png" alt="image-20230207143507522" style="zoom:50%;" /></p>
-<img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071435681.png" alt="image-20230207143515623" style="zoom:50%;" />
-
-<h4 id="简单查询-单表-SELECT"><a href="#简单查询-单表-SELECT" class="headerlink" title="简单查询-单表(SELECT)"></a>简单查询-单表(SELECT)</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">括号内的即为顺序</span><br><span class="line">select 目标字段|字段表达式或函数 from 数据源 (where) (group by) (having) (order by)</span><br><span class="line">其中目标字段用*代表全部</span><br><span class="line"></span><br><span class="line">select distinct classname from stu;这里的distinct可以折叠重复的字段</span><br><span class="line"></span><br><span class="line">算数操作符:+ - * / %(取模)</span><br></pre></td></tr></table></figure>
-
-<p>下面提供一些案例,其中包含重要的知识点,慢慢看</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071448456.png" alt="image-20230207144830256"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071448577.png" alt="image-20230207144847433"></p>
-<h2 id="查表与子查询相关知识点"><a href="#查表与子查询相关知识点" class="headerlink" title="查表与子查询相关知识点"></a>查表与子查询相关知识点</h2><p>and 和 or 连接多个表达式</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">select 学号 from 选课 where 课程号 = &#x27;c04&#x27; and 成绩 &gt; 90</span><br></pre></td></tr></table></figure>
-
-<p>and是两个条件都满足</p>
-<p>or是两个条件满足其中之一就行</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501285.png" alt="image-20221118143140498"></p>
-<p>in后面代表的是集合,里面得是同类型的东西</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">between xx and xx检索一个范围(整数),并且这是一个闭区间</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501286.png" alt="image-20221118143653861"></p>
-<p>like语句</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">select * from stu where sanme like &#x27;王%&#x27;;(%替代很多个)</span><br><span class="line"></span><br><span class="line">select * from stu where sanme like &#x27;王_&#x27;;(_替代一个)</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501287.png" alt="image-20221118145605265"></p>
-<p>如此以查找含有名字的</p>
-<h3 id="内联查询"><a href="#内联查询" class="headerlink" title="内联查询"></a>内联查询</h3><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501288.png" alt="image-20221118160657657"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501289.png" alt="image-20221118160756250"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501290.png" alt="image-20221118160848438"></p>
-<p>当两个表有同一个字段时,需要加表前缀加以区分</p>
-<h4 id="自然连接"><a href="#自然连接" class="headerlink" title="自然连接"></a>自然连接</h4><p>join前加nature,两个字段必须同名并且会自动折叠同名的部分,原来那个字段名不必一样,但是内容得一样</p>
-<h4 id="外连接"><a href="#外连接" class="headerlink" title="外连接"></a>外连接</h4><p>左外连接和右外连接分别全部输出左边的数据与右边的数据,</p>
-<p>1、两者的分类不同：内连接分为相等连接和自然连接两种连接方式；而外连接分为左外连接、右外连接和全外连接三种连接方式（左外连接即LEFT OUTER JOIN；右外连接即RIGHT OUTER JOIN）。</p>
-<p>2、两者所连接的对象表不同：内连接进行连接的两个表是对应的相匹配的字段完全相同的。左外连接中进行连接的两个表会返回左边表中的所有的行和右边表中与之相匹配的列值，没有相匹配的用空值代替。右外连接中进行连接的两个表会返回右边表中的所有的行和左边表中与之相匹配的列值，没有相匹配的用空值代替。</p>
-<p>3、两者的作用范围不同：内连接的连接发生在一张基表内，而外连接的连接发生在两张表之间。</p>
-<p>注：内连接（典型的连接运算，使用像 =  或 &lt;&gt; 之类的比较运算符）。包括相等连接和自然连接。内连接使用比较运算符根据每个表共有的列的值匹配两个表中的行。例如，检索 students和courses表中学生标识号相同的所有行。</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501291.png" alt="image-20221125144025429"></p>
-<h4 id="自链接"><a href="#自链接" class="headerlink" title="自链接"></a>自链接</h4><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501292.png" alt="image-20221125144713254"></p>
-<p>a,b取别名,可以简化操作,学着点    <img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501293.png" alt="image-20221125145212936"></p>
-<p>3表连接,超级加倍</p>
-<h4 id="升序降序"><a href="#升序降序" class="headerlink" title="升序降序"></a>升序降序</h4><p>select * from xx order by 成绩 desc(降序)asc(升序)</p>
-<h4 id="嵌套查询-子查询"><a href="#嵌套查询-子查询" class="headerlink" title="嵌套查询-子查询"></a>嵌套查询-子查询</h4><p>in语句</p>
-<p>select 学号,姓名 from 学生 where 学号 not in (select 学号 from 选课);</p>
-<p>子查询的括号前面必须要in或者=&lt;&gt;之类的</p>
-<p>in表示范围内的数据</p>
-<p>where 年龄 &gt;(select 年龄 from 学生 where xxx<img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501294.png" alt="image-20221125165358705">)</p>
-<h4 id="运算符的子查询"><a href="#运算符的子查询" class="headerlink" title="运算符的子查询"></a>运算符的子查询</h4><p>selec xxx from xx where sex = ‘x’ and age &gt;(select xx from xx where name)</p>
-<h5 id="any-与all"><a href="#any-与all" class="headerlink" title="any 与all"></a>any 与all</h5><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501296.png" alt="image-20221202134716965"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501297.png" alt="image-20221202134925838"></p>
-<h5 id="exist"><a href="#exist" class="headerlink" title="exist"></a>exist</h5><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501298.png" alt="image-20221202140026009"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501299.png" alt="image-20221202140230801"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501300.png" alt="image-20221202141433864"></p>
-<p>字段相等也并不是一定要链接</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501301.png" alt="image-20221202143544431"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501302.png" alt="image-20221202144457063"></p>
-<h4 id="分组查询"><a href="#分组查询" class="headerlink" title="分组查询"></a>分组查询</h4><p>group by</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501303.png" alt="image-20221202145747995"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501304.png" alt="image-20221202145946599"></p>
-<h4 id="having语句"><a href="#having语句" class="headerlink" title="having语句"></a>having语句</h4><p>对分组后的语句经行条件的筛选就用having</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071501305.png" alt="image-20221202150916501"></p>
-<p>having后还能加order by</p>
-<h2 id="sql视图"><a href="#sql视图" class="headerlink" title="sql视图"></a>sql视图</h2><p>视图的作用</p>
-<p>简化用户的操作</p>
-<p>创建视图</p>
-<p>create view 视图名 (字段名列表) as 子查询 with check option</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071508862.png" alt="image-20221202160721007"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071508863.png" alt="image-20221202160824790"></p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071508864.png" alt="image-20221202161103904"></p>
-<h3 id="视图的更新"><a href="#视图的更新" class="headerlink" title="视图的更新"></a>视图的更新</h3><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071508865.png" alt="image-20221202162335837"></p>
-<p>with check option的作用创建的视图中字段设有where条件,当有check option的时候插入非法字符就会报错,插入的东西或是修改的东西在基表里,但是修改视图的同时也修改了基表</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071508866.png" alt="image-20221202165306489"> </p>
-<h3 id="删除视图"><a href="#删除视图" class="headerlink" title="删除视图"></a>删除视图</h3><p>drop view 视图名</p>
-<h2 id="触发器"><a href="#触发器" class="headerlink" title="触发器"></a>触发器</h2><p>create trigger 触发器名 (before/after) (insert update delete) on 表名 for each row 触发器主体</p>
-<h3 id="触发器主体"><a href="#触发器主体" class="headerlink" title="触发器主体"></a>触发器主体</h3><p>begin</p>
-<p>aql语句;</p>
-<p>end;</p>
-<p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071508867.png" alt="image-20221209141407789"></p>
-<h3 id="new与old实现数据库完整性约束"><a href="#new与old实现数据库完整性约束" class="headerlink" title="new与old实现数据库完整性约束"></a>new与old实现数据库完整性约束</h3><p><img src="https://markdown-langxecho-save.oss-cn-hangzhou.aliyuncs.com/img/202302071508868.png" alt="image-20221209143903180"></p>
-<h2 id="查看与删除触发器"><a href="#查看与删除触发器" class="headerlink" title="查看与删除触发器"></a>查看与删除触发器</h2><p>drop trigger </p>
-<p>show trigg</p>
-<h2 id="遗留下来的一些奇怪的东西"><a href="#遗留下来的一些奇怪的东西" class="headerlink" title="遗留下来的一些奇怪的东西"></a>遗留下来的一些奇怪的东西</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DELIMITER $$</span><br><span class="line">CREATE TRIGGER t_ww AFTER UPDATE ON worker FOR EACH ROW</span><br><span class="line">BEGIN</span><br><span class="line">IF new.age &gt; 60 THEN</span><br><span class="line">UPDATE worker SET new.age = old.age;</span><br><span class="line">END IF;</span><br><span class="line">END;</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="关系模型的三类完整性约束"><a href="#关系模型的三类完整性约束" class="headerlink" title="关系模型的三类完整性约束"></a>关系模型的三类完整性约束</h4><p>实体完整性  通过主键的约束保证不重复</p>
-<p>参照完整性 通过外键的管理保证标与表之间数据的完整性</p>
-<p>自定义完整性 自定义扳机</p>
-<h4 id="关系的运算"><a href="#关系的运算" class="headerlink" title="关系的运算"></a>关系的运算</h4><p>σF(),F是下标,代表查询的条件,括号内为表,f相当于where,f可替换为 addr = ‘xxx’</p>
-<p>投影运算 Πsno,sname()下标,仅搜索下标的列</p>
-<h2 id="涉及到的题目"><a href="#涉及到的题目" class="headerlink" title="涉及到的题目"></a>涉及到的题目</h2><p>(所有的这些题目选择题也写一写)</p>
-<p>12  2 3 5</p>
-<p>27  第二个</p>
-<p>28 第四个</p>
-<p>28,29,30问答题 </p>
-<p>48 第一题,第三题,</p>
-<p>73 第二题,第四题</p>
-<p>95 第十二(第五章)</p>
-<p>第六章分几乎占一半(直接或间接)</p>
-<p>153 1 2 3</p>
-<p>155 22题</p>
-<p>193 做了解</p>
-]]></content>
-      <categories>
-        <category>必修课</category>
-        <category>数据库</category>
-      </categories>
-      <tags>
-        <tag>-数据库</tag>
-      </tags>
   </entry>
 </search>
